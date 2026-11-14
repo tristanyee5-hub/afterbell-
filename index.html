@@ -1,0 +1,997 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Protein, hydration and training gear picked for high school athletes. Build your cart here, then check out on Amazon.">
+<meta name="theme-color" content="#0a1229">
+<meta property="og:type" content="website">
+<meta property="og:title" content="AfterBell Supply">
+<meta property="og:description" content="Protein, hydration and training gear picked for high school athletes. Build your cart here, then check out on Amazon.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2040%2040%22%3E%3Crect%20width%3D%2240%22%20height%3D%2240%22%20rx%3D%228%22%20fill%3D%22%230a1229%22%2F%3E%3Cpath%20fill%3D%22%23f7b500%22%20fill-rule%3D%22evenodd%22%20d%3D%22M15%205h10l9%2025h3v6H24v-6h2.5l-1-3.5h-11l-1%203.5H16v6H3v-6h3zM17%2020h6l-3-9z%22%2F%3E%3C%2Fsvg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<title>AfterBell Supply</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,600;0,700;1,800;1,900&family=Barlow:wght@400;500;600;700&display=swap">
+<style>
+/* Base reset */
+img{max-width:100%}
+[hidden]{display:none!important}
+
+/* Layout: color-blocked like a letterman jacket. Navy wool bands, chalk bands, gold trim, rib-knit stripes between them.
+   Bumper-plate colors code the four categories. One committed look, no theme switch. */
+:root{
+  color-scheme:dark;
+  --navy:#111c3d; --navy-deep:#0a1229; --navy-lift:#1d2c5c; --navy-line:#31437f;
+  --chalk:#f4f3ee; --chalk-dim:#dedbd0; --white:#ffffff;
+  --gold:#f7b500; --gold-deep:#dc9c00;
+  --ink:#0d1531; --ink-soft:#4d5777; --fog:#aeb7d6;
+  --plate-red:#d92d30; --plate-blue:#2d7ff9; --plate-gold:#f7b500; --plate-green:#1fa464;
+  --font-display:"Barlow Condensed","Arial Narrow","Roboto Condensed",Impact,sans-serif;
+  --font-body:"Barlow","Segoe UI",system-ui,-apple-system,sans-serif;
+  --t-xs:.8125rem; --t-sm:.9375rem; --t-md:1rem; --t-lg:1.1875rem;
+  --t-h2:clamp(2.6rem,6vw,4.5rem);
+  --r:10px; --r-sm:6px;
+  --ease:cubic-bezier(.2,.8,.2,1);
+}
+
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:84px;scrollbar-gutter:stable}
+html.locked,html.locked body{overflow:hidden}
+body{margin:0;background:var(--navy);color:var(--chalk);font:400 var(--t-md)/1.55 var(--font-body);-webkit-font-smoothing:antialiased;overflow-x:clip}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:35;background:var(--navy-deep)}
+h1,h2,h3,p,ul,ol,fieldset,legend{margin:0;padding:0}
+ul,ol{list-style:none}
+fieldset{border:0;min-width:0}
+a{color:inherit}
+button{font:inherit;color:inherit}
+svg{display:block}
+:focus-visible{outline:3px solid var(--focus,var(--gold));outline-offset:3px}
+
+.wrap{width:100%;max-width:1200px;margin-inline:auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+@media (min-width:760px){.wrap{padding-left:max(32px,env(safe-area-inset-left,0px));padding-right:max(32px,env(safe-area-inset-right,0px))}}
+
+/* Type */
+.display{font-family:var(--font-display);font-style:italic;font-weight:900;text-transform:uppercase;line-height:.9;text-wrap:balance}
+.h2{font-size:var(--t-h2)}
+.eyebrow{font:700 var(--t-sm)/1.2 var(--font-display);letter-spacing:.18em;text-transform:uppercase;color:var(--eyebrow,var(--gold))}
+.lede{font-size:var(--t-lg);line-height:1.5;max-width:38rem}
+.stack{display:grid;gap:18px;align-content:start;min-width:0}
+
+/* Buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5em;min-height:48px;padding:0 1.3em;border:2px solid transparent;border-radius:var(--r-sm);font:italic 800 1.2rem/1 var(--font-display);letter-spacing:.05em;text-transform:uppercase;text-decoration:none;cursor:pointer;transition:transform .15s var(--ease),background-color .15s,color .15s,border-color .15s}
+.btn:active{transform:translateY(1px) scale(.98)}
+.btn--gold{background:var(--gold);color:var(--ink)}
+.btn--gold:hover{background:var(--chalk)}
+.btn--ghost{border-color:var(--navy-line);color:var(--chalk);background:transparent}
+.btn--ghost:hover{border-color:var(--gold);color:var(--gold)}
+.btn--ink{background:var(--ink);color:var(--chalk)}
+.btn--ink:hover{background:var(--gold);color:var(--ink)}
+
+/* Header */
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:30;background:var(--navy-deep);border-bottom:1.5px solid var(--navy-line)}
+.top__in{display:flex;align-items:center;gap:20px;min-height:64px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--chalk);font:italic 900 1.8rem/1 var(--font-display);letter-spacing:.01em;text-transform:uppercase}
+.logo svg{width:34px;height:34px;flex:none}
+.nav{display:flex;gap:26px;margin-left:auto}
+.nav a{color:var(--fog);text-decoration:none;font:700 1rem/1 var(--font-display);letter-spacing:.1em;text-transform:uppercase;padding:8px 0}
+.nav a:hover{color:var(--gold)}
+.cart-btn{display:inline-flex;align-items:center;gap:10px;min-height:44px;padding:0 10px 0 12px;border:2px solid var(--gold);border-radius:var(--r-sm);background:transparent;color:var(--chalk);font:italic 800 1.15rem/1 var(--font-display);letter-spacing:.06em;text-transform:uppercase;cursor:pointer;transition:background-color .15s,color .15s}
+.cart-btn:hover{background:var(--gold);color:var(--ink)}
+.cart-btn__n{min-width:26px;height:26px;padding:0 7px;border-radius:13px;background:var(--gold);color:var(--ink);display:grid;place-items:center;font-style:normal;font-weight:700;font-variant-numeric:tabular-nums}
+.cart-btn:hover .cart-btn__n{background:var(--ink);color:var(--gold)}
+.cart-btn.bump{animation:bump .45s var(--ease)}
+@keyframes bump{35%{transform:scale(1.2) rotate(-4deg)}}
+@media (max-width:760px){.nav{display:none}.cart-btn{margin-left:auto}}
+
+/* Owner setup note */
+.setup{background:var(--navy-lift);color:var(--chalk);border-bottom:1.5px dashed var(--gold);font-size:var(--t-sm)}
+.setup__in{padding-block:10px;display:flex;gap:6px 12px;align-items:baseline;flex-wrap:wrap}
+.setup__tag{font:700 var(--t-xs)/1 var(--font-display);letter-spacing:.14em;text-transform:uppercase;color:var(--gold)}
+.setup code{font-family:ui-monospace,Consolas,monospace;font-size:.9em;background:var(--navy-deep);padding:1px 6px;border-radius:4px}
+
+/* Hero */
+.hero{position:relative;overflow:hidden;background:var(--navy)}
+.court{position:absolute;right:-14%;top:-12%;width:min(74vw,860px);pointer-events:none}
+.hero__in{position:relative;display:grid;gap:clamp(28px,4vw,56px);align-items:center;padding-block:clamp(36px,6vw,72px) clamp(40px,6vw,76px)}
+@media (min-width:920px){.hero__in{grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr)}}
+.hero__copy{display:grid;gap:22px;justify-items:start;min-width:0}
+.pass{display:inline-flex;max-width:100%;background:var(--chalk);color:var(--ink);font:700 clamp(.68rem,3.3vw,.9rem)/1 var(--font-display);letter-spacing:.12em;text-transform:uppercase;white-space:nowrap;border-radius:4px;overflow:hidden;transform:rotate(-1.5deg);box-shadow:3px 3px 0 var(--navy-deep)}
+.pass span{padding:9px clamp(8px,2.6vw,12px)}
+.pass span + span{border-left:1.5px dashed var(--ink-soft)}
+.pass span:first-child{background:var(--gold)}
+.hero__title{font-size:clamp(2.75rem,14.5vw,6.5rem)}
+@media (min-width:920px){.hero__title{font-size:clamp(4rem,8.2vw,6.5rem)}}
+.hero__title span{display:block}
+.hero__title .gold{color:var(--gold)}
+.hero__lede{font-size:clamp(1.05rem,1.6vw,1.3rem);line-height:1.5;max-width:34rem}
+.hero__cta{display:flex;flex-wrap:wrap;gap:12px}
+.hero__no{font:700 var(--t-sm)/1.4 var(--font-display);letter-spacing:.14em;text-transform:uppercase;color:var(--fog)}
+
+.locker{position:relative;width:100%;max-width:440px;justify-self:center;display:grid;gap:10px}
+.locker svg{width:100%;height:auto;overflow:visible}
+.lk-sched text{font:700 9.5px var(--font-display);letter-spacing:.06em}
+.lk-num{font:italic 900 19px var(--font-display)}
+.lk-item{cursor:pointer}
+.lk-item:focus{outline:none}
+.lk-in{transition:transform .2s var(--ease)}
+.lk-item:hover .lk-in,.lk-item:focus-visible .lk-in{transform:translateY(-7px)}
+.lk-hit{fill:transparent;pointer-events:all}
+.lk-item:focus-visible .lk-hit{stroke:var(--gold);stroke-width:2.5;stroke-dasharray:7 6}
+.lk-sway{transform-box:fill-box;transform-origin:50% 0;animation:sway 4.6s ease-in-out infinite alternate}
+@keyframes sway{from{transform:rotate(-2.4deg)}to{transform:rotate(2.4deg)}}
+.locker__hint{font:700 var(--t-sm)/1.3 var(--font-display);letter-spacing:.12em;text-transform:uppercase;color:var(--fog);text-align:center}
+.tip{position:absolute;z-index:2;left:0;top:0;transform:translate(-50%,-100%);background:var(--gold);color:var(--ink);font:700 .95rem/1.1 var(--font-display);letter-spacing:.06em;text-transform:uppercase;padding:7px 10px;border-radius:4px;pointer-events:none;white-space:nowrap;opacity:0;transition:opacity .12s}
+.tip.show{opacity:1}
+
+/* Product art */
+.art{display:block;width:100%;height:100%}
+.a-main{fill:var(--c)}
+.a-white{fill:var(--white)}
+.a-dark{fill:var(--navy-deep)}
+.a-gold{fill:var(--gold)}
+.a-o{stroke:var(--navy-deep);stroke-width:3;stroke-linejoin:round;stroke-linecap:round}
+.a-s{fill:none;stroke-linecap:round;stroke-linejoin:round}
+
+/* Marquee and rib trim */
+.marquee{background:var(--gold);color:var(--ink);overflow:hidden;border-block:3px solid var(--navy-deep)}
+.marquee__track{display:flex;width:max-content;animation:slide 32s linear infinite}
+.marquee__set{display:flex;flex:none}
+.marquee__set span{padding:12px 16px;font:italic 900 1.5rem/1 var(--font-display);letter-spacing:.05em;text-transform:uppercase;white-space:nowrap}
+.marquee__set span:nth-child(even){color:var(--plate-red)}
+@keyframes slide{to{transform:translateX(-50%)}}
+.rib{height:22px;background:linear-gradient(var(--navy-deep) 0 18%,var(--gold) 18% 36%,var(--chalk) 36% 64%,var(--gold) 64% 82%,var(--navy-deep) 82%)}
+
+/* Bands */
+.band__in{padding-block:clamp(56px,8vw,104px)}
+.band--navy{background:var(--navy);color:var(--chalk)}
+.band--chalk{background:var(--chalk);color:var(--ink);--focus:var(--plate-blue);--eyebrow:var(--ink-soft)}
+.band--gold{background:var(--gold);color:var(--ink);--focus:var(--ink);--eyebrow:var(--ink)}
+.band--red{background:var(--plate-red);color:var(--white);--focus:var(--white);--eyebrow:var(--white)}
+.band__head{display:grid;gap:14px;margin-bottom:clamp(28px,4vw,44px)}
+
+/* Lineup */
+.chips{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-bottom:22px}
+.chip{display:inline-flex;align-items:center;gap:8px;min-height:42px;padding:0 15px;border:1.5px solid var(--ink);border-radius:999px;background:transparent;color:var(--ink);font:700 1rem/1 var(--font-display);letter-spacing:.1em;text-transform:uppercase;cursor:pointer;transition:background-color .15s,color .15s}
+.chip:hover{background:var(--chalk-dim)}
+.chip[aria-pressed="true"]{background:var(--ink);color:var(--chalk)}
+.chips__count{margin-left:auto;font:700 var(--t-sm)/1 var(--font-display);letter-spacing:.14em;text-transform:uppercase;color:var(--ink-soft)}
+.plate{display:inline-block;flex:none;width:14px;height:14px;border-radius:50%;background:radial-gradient(circle,var(--white) 0 20%,var(--c) 23% 100%)}
+
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(232px,1fr));gap:18px}
+.card{display:flex;flex-direction:column;min-width:0;background:var(--white);border:1.5px solid var(--chalk-dim);border-radius:var(--r);overflow:hidden;transform:perspective(900px) rotateX(var(--rx,0deg)) rotateY(var(--ry,0deg));transition:transform .25s var(--ease),box-shadow .25s,border-color .25s}
+.card:hover,.card.is-in{border-color:var(--ink)}
+.card:hover{box-shadow:6px 6px 0 var(--ink)}
+.card__art{position:relative;display:grid;place-items:center;aspect-ratio:5/4;max-width:100%;background:color-mix(in srgb,var(--c) 15%,var(--white))}
+.card__art .art{width:58%;height:auto;aspect-ratio:1;transform:translate(var(--ax,0px),var(--ay,0px));transition:transform .25s var(--ease)}
+.cat{position:absolute;left:12px;top:12px;display:inline-flex;align-items:center;gap:7px;font:700 var(--t-xs)/1 var(--font-display);letter-spacing:.16em;text-transform:uppercase;color:var(--ink)}
+.card__body{display:flex;flex-direction:column;gap:8px;padding:16px;flex:1}
+.card__brand{font:700 var(--t-xs)/1 var(--font-display);letter-spacing:.14em;text-transform:uppercase;color:var(--ink-soft)}
+.card__name{font:700 1.5rem/1.02 var(--font-display);text-transform:uppercase}
+.card__blurb{font-size:var(--t-sm);line-height:1.45}
+.card__spec{font-size:var(--t-xs);line-height:1.4;color:var(--ink-soft)}
+.card__act{margin-top:auto;padding-top:8px;display:grid;gap:10px}
+.card__act .btn{width:100%}
+.card__amz{justify-self:start;font-size:var(--t-xs);font-weight:600;color:var(--ink-soft);text-underline-offset:3px}
+.card__amz:hover{color:var(--ink)}
+.stepper{display:grid;grid-template-columns:48px minmax(0,1fr) 48px;align-items:center;min-height:48px;border-radius:var(--r-sm);background:var(--gold);color:var(--ink);overflow:hidden}
+.stepper button{height:48px;border:0;background:transparent;font:700 1.6rem/1 var(--font-display);cursor:pointer}
+.stepper button:hover{background:var(--gold-deep)}
+.stepper output{text-align:center;font:italic 800 1.15rem/1 var(--font-display);letter-spacing:.05em;text-transform:uppercase}
+
+/* Shared item rows */
+.rows{display:grid;gap:10px}
+.row{display:grid;grid-template-columns:52px minmax(0,1fr) auto;gap:12px;align-items:center}
+.tile{display:block;width:52px;height:52px;flex:none;padding:5px;border-radius:8px;background:color-mix(in srgb,var(--c) 18%,var(--white))}
+.row__name{display:block;font:700 1.15rem/1.05 var(--font-display);text-transform:uppercase}
+.row__meta{display:block;font-size:var(--t-xs);line-height:1.35;color:var(--fog)}
+
+/* Pop quiz */
+.quiz{display:grid;gap:28px;align-items:start}
+@media (min-width:900px){.quiz{grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr)}}
+.sheet{display:grid;gap:22px;min-width:0;background:var(--white);color:var(--ink);border-radius:6px;padding:clamp(18px,3vw,32px);box-shadow:8px 8px 0 var(--ink);--focus:var(--plate-blue)}
+.sheet__top{display:flex;flex-wrap:wrap;gap:8px 24px;padding-bottom:14px;border-bottom:2px solid var(--ink);font:700 var(--t-xs)/1 var(--font-display);letter-spacing:.16em;text-transform:uppercase;color:var(--ink-soft)}
+.sheet__top span{display:inline-flex;align-items:baseline;gap:8px}
+.sheet__top i{display:inline-block;width:96px;border-bottom:1.5px solid var(--ink-soft)}
+.sheet__top b{color:var(--ink);font-size:var(--t-md)}
+.sheet__qs{display:grid;gap:26px}
+.q legend{display:flex;gap:10px;align-items:baseline;margin-bottom:12px;font:700 1.45rem/1.1 var(--font-display);text-transform:uppercase}
+.q__n{font-style:italic;font-weight:900;color:var(--plate-red)}
+.q__opts{display:grid;gap:6px}
+@media (min-width:560px){.q__opts{grid-template-columns:1fr 1fr}}
+.bubble{position:relative;display:flex;align-items:center;gap:12px;min-width:0;padding:6px 10px 6px 6px;border-radius:999px;cursor:pointer}
+.bubble input{position:absolute;opacity:0;width:1px;height:1px}
+.bubble__dot{flex:none;display:grid;place-items:center;width:36px;height:36px;border-radius:50%;border:2px solid var(--ink);font:700 1rem/1 var(--font-display);transition:background-color .15s,color .15s,transform .2s var(--ease)}
+.bubble:hover .bubble__dot{background:var(--chalk-dim)}
+.bubble input:checked + .bubble__dot{background:var(--ink);color:var(--white);transform:scale(1.1) rotate(-6deg)}
+.bubble input:checked ~ .bubble__txt{font-weight:700}
+.bubble input:focus-visible + .bubble__dot{outline:3px solid var(--plate-blue);outline-offset:3px}
+.bubble__txt{line-height:1.25}
+.kitcard{position:relative;display:grid;gap:16px;min-width:0;background:var(--navy);color:var(--chalk);border-radius:var(--r);padding:clamp(18px,3vw,28px);box-shadow:8px 8px 0 var(--ink);--focus:var(--gold)}
+@media (min-width:900px){.kitcard{position:sticky;top:calc(88px + env(safe-area-inset-top,0px))}}
+.kitcard__title{font:italic 900 2.3rem/.95 var(--font-display);text-transform:uppercase}
+.kitcard__note{font-size:var(--t-xs);color:var(--fog)}
+.stamp{position:absolute;top:20px;right:18px;border:2.5px solid var(--gold);color:var(--gold);padding:5px 9px 4px;border-radius:4px;font:italic 900 1rem/1 var(--font-display);letter-spacing:.14em;text-transform:uppercase;transform:rotate(7deg)}
+.stamp.pop{animation:stamp .45s var(--ease)}
+@keyframes stamp{from{transform:rotate(7deg) scale(1.9);opacity:0}}
+
+/* Starter kits */
+.kits{display:grid;gap:18px}
+@media (min-width:960px){.kits{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.kit{display:grid;gap:16px;align-content:start;min-width:0;background:var(--navy-lift);border:1.5px solid var(--navy-line);border-radius:var(--r);padding:22px}
+.pennant{justify-self:start;max-width:100%;background:var(--k);color:var(--kt);font:italic 900 1.5rem/1 var(--font-display);text-transform:uppercase;white-space:nowrap;padding:14px 96px 14px 14px;clip-path:polygon(0 0,100% 50%,0 100%)}
+.kit__who{color:var(--fog);margin-top:-6px}
+.kit .btn{justify-self:start}
+
+/* Not in the locker */
+.nope{display:grid;gap:20px}
+.nope__list{display:flex;flex-wrap:wrap;gap:4px 30px;font-size:clamp(2.4rem,8vw,6rem);line-height:.94}
+.nope__list li{text-decoration:line-through;text-decoration-thickness:.08em;text-decoration-color:var(--ink)}
+.nope__txt{max-width:41rem;font-size:var(--t-lg);font-weight:500;line-height:1.5}
+
+/* Checkout steps and FAQ */
+.split{display:grid;gap:44px}
+@media (min-width:900px){.split{grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:64px}}
+.steps{display:grid;gap:20px;counter-reset:s;margin-top:8px}
+.steps li{display:grid;grid-template-columns:44px minmax(0,1fr);gap:14px;align-items:start;max-width:34rem}
+.steps li::before{counter-increment:s;content:counter(s);font:italic 900 3.2rem/.82 var(--font-display);color:var(--plate-red)}
+.steps b{display:block;margin-bottom:4px;font:700 1.4rem/1.1 var(--font-display);text-transform:uppercase}
+.faq details{border-top:2px solid var(--ink)}
+.faq details:last-child{border-bottom:2px solid var(--ink)}
+.faq summary{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:16px 0;cursor:pointer;list-style:none;font:700 1.35rem/1.15 var(--font-display);text-transform:uppercase}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";flex:none;font:700 1.7rem/1 var(--font-display);transition:transform .2s var(--ease)}
+.faq details[open] summary::after{transform:rotate(45deg)}
+.faq__a{padding-bottom:18px;max-width:38rem}
+
+/* Footer */
+.foot{background:var(--navy-deep);color:var(--fog);font-size:var(--t-sm)}
+.foot__in{padding-block:36px 44px;display:grid;gap:14px}
+.foot__line{max-width:46rem}
+.foot__line--lead{color:var(--chalk);font-weight:600}
+
+/* Cart drawer */
+.scrim{position:fixed;inset:0;z-index:40;background:color-mix(in srgb,var(--navy-deep) 72%,transparent);opacity:0;pointer-events:none;transition:opacity .25s}
+.scrim.open{opacity:1;pointer-events:auto}
+.drawer{position:fixed;top:0;right:0;bottom:0;z-index:50;display:flex;flex-direction:column;width:min(430px,100%);background:var(--navy-deep);color:var(--chalk);border-left:1.5px solid var(--navy-line);padding-top:env(safe-area-inset-top,0px);padding-right:env(safe-area-inset-right,0px);padding-bottom:env(safe-area-inset-bottom,0px);transform:translateX(100%);visibility:hidden;transition:transform .3s var(--ease),visibility 0s .3s}
+.drawer.open{transform:none;visibility:visible;transition:transform .3s var(--ease),visibility 0s}
+.drawer__head{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 20px;border-bottom:1.5px solid var(--navy-line)}
+.drawer__title{font:italic 900 2rem/1 var(--font-display);text-transform:uppercase}
+.icon-btn{display:grid;place-items:center;width:44px;height:44px;border:1.5px solid var(--navy-line);border-radius:var(--r-sm);background:transparent;color:var(--chalk);cursor:pointer}
+.icon-btn:hover{border-color:var(--gold);color:var(--gold)}
+.drawer__body{flex:1;overflow-y:auto;overscroll-behavior:contain;display:grid;gap:18px;align-content:start;padding:18px 20px}
+.bar{display:grid;gap:10px;padding:16px 14px 12px;background:var(--navy);border:1.5px solid var(--navy-line);border-radius:var(--r)}
+.bar svg{width:100%;height:auto}
+.bar__cap{text-align:center;font:700 var(--t-sm)/1 var(--font-display);letter-spacing:.14em;text-transform:uppercase;color:var(--fog)}
+.lines{display:grid;gap:14px}
+.line{display:grid;grid-template-columns:52px minmax(0,1fr) auto;gap:12px;align-items:center}
+.line__link{font-size:var(--t-xs);color:var(--fog);text-underline-offset:3px}
+.line__link:hover{color:var(--gold)}
+.mini{display:inline-grid;grid-template-columns:40px 28px 40px;align-items:center;border:1.5px solid var(--navy-line);border-radius:var(--r-sm);overflow:hidden}
+.mini button{height:40px;border:0;background:transparent;color:var(--chalk);font:700 1.3rem/1 var(--font-display);cursor:pointer}
+.mini button:hover{background:var(--navy-lift);color:var(--gold)}
+.mini output{text-align:center;font:700 1.1rem/1 var(--font-display);font-variant-numeric:tabular-nums}
+.empty{display:grid;gap:10px;justify-items:start}
+.empty__t{font:italic 900 2rem/1 var(--font-display);text-transform:uppercase}
+.drawer__foot{display:grid;gap:10px;padding:16px 20px 18px;border-top:1.5px solid var(--navy-line)}
+.drawer__foot .btn{width:100%}
+.fine{font-size:var(--t-xs);line-height:1.45;color:var(--fog)}
+.link-btn{justify-self:start;padding:6px 0;border:0;background:none;color:var(--fog);font-size:var(--t-sm);text-decoration:underline;text-underline-offset:3px;cursor:pointer}
+.link-btn:hover{color:var(--gold)}
+
+/* Toast and fly-to-cart */
+.toast{position:fixed;left:50%;bottom:calc(18px + env(safe-area-inset-bottom,0px));z-index:70;max-width:calc(100% - 32px);padding:12px 18px;border-radius:var(--r-sm);background:var(--gold);color:var(--ink);box-shadow:4px 4px 0 var(--navy-deep);font:italic 800 1.15rem/1.1 var(--font-display);letter-spacing:.05em;text-transform:uppercase;text-align:center;pointer-events:none;opacity:0;transform:translate(-50%,24px);transition:opacity .2s,transform .25s var(--ease)}
+.toast.show{opacity:1;transform:translate(-50%,0)}
+.fly{position:fixed;z-index:60;pointer-events:none}
+
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  html{scroll-behavior:auto}
+}
+</style>
+</head>
+<body>
+<div id="page">
+  <header class="top">
+    <div class="wrap top__in">
+      <a class="logo" href="#top" aria-label="AfterBell Supply, back to top">
+        <svg viewBox="0 0 40 40" aria-hidden="true" focusable="false"><path fill="var(--gold)" stroke="var(--chalk)" stroke-width="2" stroke-linejoin="round" paint-order="stroke" fill-rule="evenodd" d="M15 5h10l9 25h3v6H24v-6h2.5l-1-3.5h-11l-1 3.5H16v6H3v-6h3zM17 20h6l-3-9z"/></svg>
+        AfterBell
+      </a>
+      <nav class="nav" aria-label="Sections">
+        <a href="#lineup">Lineup</a>
+        <a href="#quiz">Pop quiz</a>
+        <a href="#kits">Kits</a>
+        <a href="#faq">Questions</a>
+      </nav>
+      <button class="cart-btn" id="cartBtn" type="button" data-open-cart aria-label="Open cart, 0 items">
+        <svg viewBox="0 0 28 16" width="28" height="16" aria-hidden="true" focusable="false"><g fill="currentColor"><rect x="0" y="6.5" width="28" height="3" rx="1.5"/><rect x="4" y="1" width="4" height="14" rx="1.5"/><rect x="20" y="1" width="4" height="14" rx="1.5"/><rect x="9" y="3.5" width="3" height="9" rx="1.2"/><rect x="16" y="3.5" width="3" height="9" rx="1.2"/></g></svg>
+        Cart <span class="cart-btn__n" id="cartN">0</span>
+      </button>
+    </div>
+  </header>
+
+  <main id="top">
+    <div class="setup" id="setup" hidden>
+      <div class="wrap setup__in">
+        <span class="setup__tag">Owner setup</span>
+        <span>No Amazon Associates tag yet, so these links earn nothing. Set <code>amazonTag</code> at the top of the page script and this note goes away.</span>
+      </div>
+    </div>
+
+    <section class="hero" aria-labelledby="heroTitle">
+      <svg class="court" viewBox="0 0 600 600" aria-hidden="true" focusable="false"><g fill="none" stroke="var(--navy-line)" stroke-width="3"><circle cx="300" cy="300" r="262"/><circle cx="300" cy="300" r="84"/><path d="M-300 300h1200"/></g></svg>
+      <div class="wrap hero__in">
+        <div class="hero__copy">
+          <p class="pass"><span>Hall pass</span><span>To: weight room</span><span>2:55 PM</span></p>
+          <h1 class="display hero__title" id="heroTitle"><span>Last bell </span><span>rings. </span><span class="gold">Work starts.</span></h1>
+          <p class="hero__lede">Protein, hydration and training gear picked for high school athletes. Build your cart here, then check out on Amazon.</p>
+          <div class="hero__cta">
+            <a class="btn btn--gold" href="#lineup">Shop the lineup</a>
+            <a class="btn btn--ghost" href="#quiz">Take the pop quiz</a>
+          </div>
+          <p class="hero__no">No pre-workout · No fat burners · No test boosters</p>
+        </div>
+
+        <div class="locker" id="locker">
+          <svg viewBox="0 0 440 560" role="group" aria-label="Open locker stocked with items from the lineup">
+            <ellipse cx="228" cy="541" rx="200" ry="9" fill="var(--navy-deep)"/>
+            <rect x="32" y="26" width="86" height="508" rx="4" fill="var(--navy)" stroke="var(--navy-line)" stroke-width="3"/>
+            <g fill="var(--navy-deep)"><rect x="49" y="46" width="52" height="7" rx="3.5"/><rect x="49" y="60" width="52" height="7" rx="3.5"/><rect x="49" y="74" width="52" height="7" rx="3.5"/></g>
+            <g class="lk-sched" aria-hidden="true">
+              <rect x="45" y="118" width="60" height="134" rx="2" fill="var(--chalk)"/>
+              <rect x="45" y="118" width="60" height="17" rx="2" fill="var(--ink)"/>
+              <text x="75" y="130.5" text-anchor="middle" fill="var(--chalk)">BELLS</text>
+              <rect x="45" y="234" width="60" height="18" fill="var(--gold)"/>
+              <g fill="var(--ink)">
+                <text x="52" y="149">1</text><text x="99" y="149" text-anchor="end">8:05</text>
+                <text x="52" y="162.5">2</text><text x="99" y="162.5" text-anchor="end">9:00</text>
+                <text x="52" y="176">3</text><text x="99" y="176" text-anchor="end">9:55</text>
+                <text x="52" y="189.5">4</text><text x="99" y="189.5" text-anchor="end">10:50</text>
+                <text x="52" y="203">5</text><text x="99" y="203" text-anchor="end">12:10</text>
+                <text x="52" y="216.5">6</text><text x="99" y="216.5" text-anchor="end">1:05</text>
+                <text x="52" y="230">7</text><text x="99" y="230" text-anchor="end">2:00</text>
+                <text x="52" y="246.5">LIFT</text><text x="99" y="246.5" text-anchor="end">2:55</text>
+              </g>
+              <circle cx="75" cy="117" r="5.5" fill="var(--plate-red)"/>
+            </g>
+            <path d="M26 318v-9a8 8 0 0 1 16 0v9" fill="none" stroke="var(--chalk-dim)" stroke-width="4" stroke-linecap="round"/>
+            <circle cx="34" cy="332" r="15" fill="var(--chalk-dim)" stroke="var(--navy-deep)" stroke-width="3"/>
+            <circle cx="34" cy="332" r="8.5" fill="var(--navy-deep)"/>
+            <path d="M34 325v5" fill="none" stroke="var(--gold)" stroke-width="2.5" stroke-linecap="round"/>
+            <rect x="118" y="26" width="290" height="508" rx="4" fill="var(--navy-lift)" stroke="var(--navy-line)" stroke-width="3"/>
+            <g fill="var(--navy-deep)"><rect x="140" y="41" width="62" height="6" rx="3"/><rect x="140" y="53" width="62" height="6" rx="3"/><rect x="324" y="41" width="62" height="6" rx="3"/><rect x="324" y="53" width="62" height="6" rx="3"/></g>
+            <rect x="235" y="38" width="56" height="25" rx="3" fill="var(--chalk)"/>
+            <text class="lk-num" x="263" y="57" text-anchor="middle" fill="var(--ink)">255</text>
+            <rect x="119.5" y="188" width="287" height="7" fill="var(--navy-line)"/>
+            <rect x="119.5" y="372" width="287" height="7" fill="var(--navy-line)"/>
+            <g fill="none" stroke="var(--chalk-dim)" stroke-width="3" stroke-linecap="round"><path d="M178 195v6a5 5 0 0 0 10 0"/><path d="M266 195v6a5 5 0 0 0 10 0"/><path d="M352 195v6a5 5 0 0 0 10 0"/></g>
+            <g id="lockerItems"></g>
+          </svg>
+          <span class="tip" id="tip" aria-hidden="true"></span>
+          <p class="locker__hint">Locker 255. Tap anything inside to add it.</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <div class="marquee__set"><span>Fuel</span><span>★</span><span>Hydrate</span><span>★</span><span>Lift</span><span>★</span><span>Recover</span><span>★</span><span>Sleep</span><span>★</span><span>Repeat</span><span>★</span><span>Fuel</span><span>★</span><span>Hydrate</span><span>★</span><span>Lift</span><span>★</span><span>Recover</span><span>★</span><span>Sleep</span><span>★</span><span>Repeat</span><span>★</span></div>
+        <div class="marquee__set"><span>Fuel</span><span>★</span><span>Hydrate</span><span>★</span><span>Lift</span><span>★</span><span>Recover</span><span>★</span><span>Sleep</span><span>★</span><span>Repeat</span><span>★</span><span>Fuel</span><span>★</span><span>Hydrate</span><span>★</span><span>Lift</span><span>★</span><span>Recover</span><span>★</span><span>Sleep</span><span>★</span><span>Repeat</span><span>★</span></div>
+      </div>
+    </div>
+
+    <section class="band band--chalk" id="lineup" aria-labelledby="lineupTitle">
+      <div class="wrap band__in">
+        <div class="band__head">
+          <p class="eyebrow">The lineup</p>
+          <h2 class="display h2" id="lineupTitle">Twelve picks. Zero filler.</h2>
+          <p class="lede">Tap Add on what you need, then check out on Amazon, where you'll see the current price. We earn a commission on Amazon purchases made through this site.</p>
+        </div>
+        <div class="chips" role="group" aria-label="Filter the lineup">
+          <button class="chip" type="button" data-filter="all" aria-pressed="true">All</button>
+          <button class="chip" type="button" data-filter="fuel" aria-pressed="false" style="--c:var(--plate-red)"><i class="plate"></i>Fuel</button>
+          <button class="chip" type="button" data-filter="hydration" aria-pressed="false" style="--c:var(--plate-blue)"><i class="plate"></i>Hydration</button>
+          <button class="chip" type="button" data-filter="gear" aria-pressed="false" style="--c:var(--plate-gold)"><i class="plate"></i>Gear</button>
+          <button class="chip" type="button" data-filter="recovery" aria-pressed="false" style="--c:var(--plate-green)"><i class="plate"></i>Recovery</button>
+          <span class="chips__count" id="count" aria-live="polite"></span>
+        </div>
+        <ul class="grid" id="grid"></ul>
+      </div>
+    </section>
+
+    <div class="rib" aria-hidden="true"></div>
+
+    <section class="band band--gold" id="quiz" aria-labelledby="quizTitle">
+      <div class="wrap band__in">
+        <div class="band__head">
+          <p class="eyebrow">Pop quiz</p>
+          <h2 class="display h2" id="quizTitle">Find your kit</h2>
+          <p class="lede">Three questions, no wrong answers. Fill in the bubbles and your kit updates as you go.</p>
+        </div>
+        <div class="quiz">
+          <form class="sheet" id="sheet" aria-label="Kit finder quiz" novalidate>
+            <div class="sheet__top" aria-hidden="true"><span>Name <i></i></span><span>Period <b>7</b></span><span>Subject <b>Lifting</b></span></div>
+            <div class="sheet__qs" id="questions"></div>
+          </form>
+          <div class="kitcard">
+            <span class="stamp" id="stamp" aria-hidden="true">Kit ready</span>
+            <h3 class="kitcard__title">Your kit</h3>
+            <ul class="rows" id="kitRows" aria-live="polite"></ul>
+            <button class="btn btn--gold" id="kitBtn" type="button" data-kit="" data-kit-name="Your kit">Add kit to cart</button>
+            <p class="kitcard__note" id="kitNote">Sample answers are filled in. Change them to match you.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="band band--navy" id="kits" aria-labelledby="kitsTitle">
+      <div class="wrap band__in">
+        <div class="band__head">
+          <p class="eyebrow">Starter kits</p>
+          <h2 class="display h2" id="kitsTitle">Four things. One tap.</h2>
+          <p class="lede">Each kit adds four items to your cart. Swap anything out before you check out.</p>
+        </div>
+        <ul class="kits" id="kitsList"></ul>
+      </div>
+    </section>
+
+    <section class="band band--red" aria-labelledby="nopeTitle">
+      <div class="wrap band__in nope">
+        <h2 class="eyebrow" id="nopeTitle">Not in the locker</h2>
+        <ul class="nope__list display"><li>Pre-workout</li><li>Fat burners</li><li>Test boosters</li></ul>
+        <p class="nope__txt">Those are made for adults, and you don't need them. Regular meals, eight hours of sleep and showing up do more at this age than anything in a tub. Everything stocked here is everyday food and drink in a faster form, or gear you'll use for years.</p>
+      </div>
+    </section>
+
+    <section class="band band--chalk" id="faq" aria-labelledby="howTitle">
+      <div class="wrap band__in split">
+        <div class="stack">
+          <p class="eyebrow">Checkout</p>
+          <h2 class="display h2" id="howTitle">How buying works</h2>
+          <ol class="steps">
+            <li><div><b>Add to cart</b>Tap Add on anything in the lineup, a kit, or the locker.</div></li>
+            <li><div><b>Send it to Amazon</b>Open your cart and tap Check out on Amazon. Amazon opens with your picks listed.</div></li>
+            <li><div><b>Buy it there</b>Confirm the items and pay with an Amazon account. Under 18? Amazon requires a parent or guardian to be involved, so loop them in.</div></li>
+          </ol>
+        </div>
+        <div class="stack">
+          <p class="eyebrow">Questions</p>
+          <div class="faq">
+            <details open>
+              <summary>Do I actually need supplements?</summary>
+              <p class="faq__a">Mostly no. Regular meals cover what a high school athlete needs. Powder, shakes and bars are food in a form that survives a backpack, which helps when practice ends hours after lunch.</p>
+            </details>
+            <details>
+              <summary>Is protein powder OK for teenagers?</summary>
+              <p class="faq__a">Protein powder is food, and most teens who eat regular meals already get enough protein. Treat it as a convenience, never a requirement. If you have allergies or a medical condition, or you're unsure, ask a parent and your doctor first, and read the label.</p>
+            </details>
+            <details>
+              <summary>Why no pre-workout?</summary>
+              <p class="faq__a">This store is built for high schoolers, so it sticks to food basics and gear. Pre-workout, fat burners and test boosters are made for adults. If you're curious about anything stronger, talk to a parent, your doctor or your athletic trainer.</p>
+            </details>
+            <details>
+              <summary>Why are there no prices here?</summary>
+              <p class="faq__a">Amazon changes prices all the time, so you'll see the current price on Amazon before you pay.</p>
+            </details>
+            <details>
+              <summary>Does this site make money?</summary>
+              <p class="faq__a">Yes. We earn a commission from Amazon when you buy through these links. It doesn't change what you pay.</p>
+            </details>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="rib" aria-hidden="true"></div>
+  </main>
+
+  <footer class="foot">
+    <div class="wrap foot__in">
+      <p class="foot__line foot__line--lead">As an Amazon Associate I earn from qualifying purchases.</p>
+      <p class="foot__line">Checkout, pricing, shipping and returns are handled by Amazon. Amazon and the Amazon logo are trademarks of Amazon.com, Inc. or its affiliates.</p>
+      <p class="foot__line">Nothing here is medical advice. Read every label for allergens, and check with a parent and your doctor before starting any supplement.</p>
+      <p class="foot__line">© <span id="year"></span> AfterBell Supply</p>
+    </div>
+  </footer>
+</div>
+
+<div class="scrim" id="scrim" data-close-cart></div>
+<aside class="drawer" id="drawer" role="dialog" aria-modal="true" aria-labelledby="drawerTitle" inert>
+  <div class="drawer__head">
+    <h2 class="drawer__title" id="drawerTitle">Your cart</h2>
+    <button class="icon-btn" id="closeBtn" type="button" data-close-cart aria-label="Close cart">
+      <svg viewBox="0 0 20 20" width="20" height="20" aria-hidden="true" focusable="false"><path d="M4 4l12 12M16 4L4 16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg>
+    </button>
+  </div>
+  <div class="drawer__body">
+    <div class="bar">
+      <div id="barbell"></div>
+      <p class="bar__cap" id="barCap"></p>
+    </div>
+    <ul class="lines" id="lines"></ul>
+    <div class="empty" id="empty">
+      <p class="empty__t">Empty bar.</p>
+      <p>Add something from the lineup and it loads up here.</p>
+      <a class="btn btn--gold" href="#lineup" data-close-cart>Shop the lineup</a>
+    </div>
+  </div>
+  <div class="drawer__foot" id="drawerFoot">
+    <a class="btn btn--gold" id="checkout" href="#lineup" target="_blank" rel="sponsored nofollow noopener">Check out on Amazon ↗</a>
+    <p class="fine" id="fine">Opens Amazon in a new tab with these items ready to add to your Amazon cart. You'll see current prices there. We earn a commission on qualifying purchases.</p>
+    <button class="link-btn" id="clearBtn" type="button" data-clear>Clear cart</button>
+  </div>
+</aside>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script>
+(() => {
+  "use strict";
+
+  /* ================= EDIT HERE ================= */
+  const CONFIG = {
+    amazonTag: "",                  // Your Amazon Associates tracking ID, for example "yourname-20"
+    amazonDomain: "www.amazon.com",
+    checkoutMode: "cart"            // "cart": one button sends the whole cart to Amazon. "links": shoppers open each item on Amazon instead.
+  };
+
+  const CATS = {
+    fuel:      { label: "Fuel",      color: "var(--plate-red)" },
+    hydration: { label: "Hydration", color: "var(--plate-blue)" },
+    gear:      { label: "Gear",      color: "var(--plate-gold)" },
+    recovery:  { label: "Recovery",  color: "var(--plate-green)" }
+  };
+
+  /* One entry per product. asin is the 10-character ID in the product's Amazon URL (amazon.com/dp/ASIN).
+     Use the ASIN of one exact size, flavor or color, or Amazon can't add it to a cart.
+     fit decides which quiz answers recommend the product. */
+  const PRODUCTS = [
+    { id: "whey", asin: "B002DYIZH6", cat: "fuel", art: "tub", brand: "Optimum Nutrition", name: "Gold Standard Whey",
+      spec: "24 g protein per scoop · 2 lb · Double Rich Chocolate",
+      blurb: "A shake for the days practice ends hours after lunch. One scoop in milk or water.",
+      fit: { goal: ["strong", "start", "season"], place: ["school", "home"], fix: ["hungry"] } },
+    { id: "corepower", asin: "B07LD2NV9X", cat: "fuel", art: "rtd", brand: "Core Power by Fairlife", name: "Protein Milk Shake",
+      spec: "26 g protein · 14 fl oz · 12-pack · Chocolate",
+      blurb: "Already mixed. Keep one in your bag for the ride home from a game.",
+      fit: { goal: ["season", "engine"], place: ["school", "field"], fix: ["hungry"] } },
+    { id: "clif", asin: "B09QHBBGJT", cat: "fuel", art: "bars", brand: "CLIF Builders", name: "Protein Bars",
+      spec: "20 g protein · 12 bars · Chocolate Peanut Butter",
+      blurb: "Fits in a hoodie pocket. Good between last period and warm-ups.",
+      fit: { goal: ["season", "engine", "start"], place: ["school", "field"], fix: ["hungry"] } },
+    { id: "shaker", asin: "B0877B826H", cat: "fuel", art: "shaker", brand: "BlenderBottle", name: "Classic V2 Shaker",
+      spec: "28 oz · wire whisk ball · Black",
+      blurb: "The whisk ball breaks up clumps. Rinse it the same day.",
+      fit: { goal: ["strong", "start"], place: ["school", "home"], fix: ["hungry"] } },
+    { id: "liquidiv", asin: "B01IT9NLHW", cat: "hydration", art: "sticks", brand: "Liquid I.V.", name: "Hydration Multiplier",
+      spec: "16 stick packs · Lemon Lime",
+      blurb: "Electrolyte drink mix for two-a-days and hot gyms. One stick in a bottle of water.",
+      fit: { goal: ["engine", "season"], place: ["field", "school"], fix: ["cramps"] } },
+    { id: "squeeze", asin: "B00LZSJ642", cat: "hydration", art: "squeeze", brand: "Gatorade", name: "32 oz Squeeze Bottles",
+      spec: "2-pack · 32 oz each",
+      blurb: "The sideline bottle. One for water, one for your mix.",
+      fit: { goal: ["engine", "season", "start"], place: ["field", "school"], fix: ["cramps"] } },
+    { id: "bands", asin: "B01AVDVHTI", cat: "gear", art: "bands", brand: "Fit Simplify", name: "Resistance Loop Bands",
+      spec: "Set of 5 · five resistance levels · carry bag",
+      blurb: "Warm up hips and shoulders before you lift. Lives in your backpack.",
+      fit: { goal: ["start", "strong", "season"], place: ["home", "field"], fix: ["nogear", "sore"] } },
+    { id: "rope", asin: "B07TRJ4D95", cat: "gear", art: "rope", brand: "AIZIYUO", name: "Speed Jump Rope",
+      spec: "2-pack · ball bearings · adjustable length",
+      blurb: "Conditioning that fits in a pocket. Split the pair with a teammate.",
+      fit: { goal: ["engine", "start"], place: ["home", "field"], fix: ["nogear"] } },
+    { id: "straps", asin: "B07BB3VQ42", cat: "gear", art: "straps", brand: "Gymreapers", name: "Lifting Straps",
+      spec: "Padded · 18 in cotton · pair",
+      blurb: "For heavy rows and deadlifts when your grip gives out before your back does.",
+      fit: { goal: ["strong"], place: ["school"], fix: [] } },
+    { id: "pullup", asin: "B001EJMS6K", cat: "gear", art: "pullup", brand: "Iron Gym", name: "Doorway Pull-Up Bar",
+      spec: "Fits 24 to 32 in doorways · no screws · up to 300 lb",
+      blurb: "Hang it in your bedroom doorway. Knock out a few every time you walk under it.",
+      fit: { goal: ["strong", "start"], place: ["home"], fix: ["nogear"] } },
+    { id: "roller", asin: "B00XM2MXK8", cat: "recovery", art: "roller", brand: "Amazon Basics", name: "High-Density Foam Roller",
+      spec: "18 in · firm",
+      blurb: "Roll out quads and back after leg day. Two minutes a side.",
+      fit: { goal: ["season", "engine", "strong"], place: ["home", "field"], fix: ["sore"] } },
+    { id: "balls", asin: "B017V7UKW2", cat: "recovery", art: "balls", brand: "Kieba", name: "Massage Lacrosse Balls",
+      spec: "Set of 2 · firm rubber",
+      blurb: "Pin one between your back and a wall to reach the knot a roller can't.",
+      fit: { goal: ["season", "engine"], place: ["home", "school"], fix: ["sore"] } }
+  ];
+
+  const KITS = [
+    { name: "Day One", who: "New to the weight room.", color: "var(--plate-gold)", text: "var(--ink)", items: ["whey", "shaker", "bands", "roller"] },
+    { name: "Game Week", who: "In season and playing twice a week.", color: "var(--plate-red)", text: "var(--white)", items: ["liquidiv", "squeeze", "clif", "balls"] },
+    { name: "Garage Gym", who: "Training at home with no equipment.", color: "var(--plate-green)", text: "var(--ink)", items: ["pullup", "bands", "rope", "roller"] }
+  ];
+
+  const QUIZ = [
+    { key: "goal", q: "What are you training for?", opts: [["strong", "Getting stronger"], ["engine", "Getting faster and lasting longer"], ["season", "My sport is in season"], ["start", "Just getting started"]] },
+    { key: "place", q: "Where do you train most?", opts: [["school", "School weight room"], ["home", "Home or garage"], ["field", "Field, court or track"]] },
+    { key: "fix", q: "What's the biggest problem right now?", opts: [["hungry", "Starving after practice"], ["cramps", "Cramping or gassed late"], ["sore", "Sore for days"], ["nogear", "No equipment"]] }
+  ];
+  /* ============== END OF EDIT AREA ============== */
+
+  /* Product illustrations, each drawn on a 120 x 120 box. */
+  const ART = {
+    tub: '<rect class="a-dark a-o" x="36" y="12" width="48" height="17" rx="5"/><rect class="a-white a-o" x="29" y="27" width="62" height="83" rx="9"/><rect class="a-main" x="30.5" y="48" width="59" height="40"/><path class="a-white" d="M64 53 50 71h9l-4 13 15-19h-9z"/>',
+    rtd: '<rect class="a-dark a-o" x="50" y="8" width="20" height="13" rx="3"/><path class="a-white a-o" d="M48 21h24v8c0 7 10 10 10 22v51a8 8 0 0 1-8 8H46a8 8 0 0 1-8-8V51c0-12 10-15 10-22z"/><rect class="a-main" x="39.5" y="58" width="41" height="34"/><path class="a-white" d="M60 64l3.2 6.6 7.3 1-5.3 5.1 1.3 7.2-6.5-3.4-6.5 3.4 1.3-7.2-5.3-5.1 7.3-1z"/>',
+    bars: '<g transform="rotate(-14 60 60)"><path class="a-gold a-o" d="M30 58h66l5 4.5-5 4.5 5 4.5-5 4.5 5 4.5-5 4.5H30l-5-4.5 5-4.5-5-4.5 5-4.5-5-4.5z"/><path class="a-main a-o" d="M22 34h66l5 4.5-5 4.5 5 4.5-5 4.5 5 4.5-5 4.5H22l-5-4.5 5-4.5-5-4.5 5-4.5-5-4.5z"/><rect class="a-white" x="36" y="41" width="38" height="13" rx="2"/></g>',
+    shaker: '<path class="a-white a-o" d="M40 40h40l-5 64a6 6 0 0 1-6 6H51a6 6 0 0 1-6-6z"/><path class="a-main" d="M44.8 80h30.4l-1.8 23.2a4 4 0 0 1-4 3.8H50.6a4 4 0 0 1-4-3.8z"/><circle class="a-s" cx="60" cy="93" r="7.5" stroke="var(--white)" stroke-width="2"/><path class="a-s" d="M52.5 93h15M60 85.5v15" stroke="var(--white)" stroke-width="2"/><path class="a-s" d="M47 52h9M47.7 61h6.5M48.4 70h9" stroke="var(--navy-deep)" stroke-width="2.5"/><rect class="a-main a-o" x="35" y="25" width="50" height="16" rx="5"/><rect class="a-dark a-o" x="50" y="12" width="20" height="14" rx="4"/><path class="a-s" d="M85 30c11 0 13 15 2 17" stroke="var(--navy-deep)" stroke-width="4"/>',
+    sticks: '<rect class="a-main a-o" x="50" y="18" width="20" height="88" rx="4" transform="rotate(-17 60 106)"/><rect class="a-main a-o" x="50" y="18" width="20" height="88" rx="4" transform="rotate(17 60 106)"/><rect class="a-white a-o" x="49" y="14" width="22" height="94" rx="4"/><path class="a-main" d="M60 40c7 10 10 15 10 20a10 10 0 0 1-20 0c0-5 3-10 10-20z"/><path class="a-s" d="M49 27h22" stroke="var(--navy-deep)" stroke-width="2" stroke-dasharray="3 3"/>',
+    squeeze: '<rect class="a-dark a-o" x="54" y="6" width="12" height="12" rx="3"/><rect class="a-main a-o" x="44" y="16" width="32" height="14" rx="4"/><path class="a-white a-o" d="M43 30h34l3 16-4 11 4 11v34a8 8 0 0 1-8 8H48a8 8 0 0 1-8-8V68l4-11-4-11z"/><rect class="a-main" x="41.5" y="76" width="37" height="20"/>',
+    bands: '<ellipse class="a-s" cx="44" cy="62" rx="20" ry="42" stroke="var(--navy-deep)" stroke-width="12"/><ellipse class="a-s" cx="44" cy="62" rx="20" ry="42" stroke="var(--c)" stroke-width="7"/><ellipse class="a-s" cx="60" cy="62" rx="20" ry="42" stroke="var(--navy-deep)" stroke-width="12"/><ellipse class="a-s" cx="60" cy="62" rx="20" ry="42" stroke="var(--white)" stroke-width="7"/><ellipse class="a-s" cx="76" cy="62" rx="20" ry="42" stroke="var(--navy-deep)" stroke-width="12"/><ellipse class="a-s" cx="76" cy="62" rx="20" ry="42" stroke="var(--plate-red)" stroke-width="7"/>',
+    rope: '<path class="a-s" d="M38 44C8 128 112 128 82 44" stroke="var(--navy-deep)" stroke-width="7.5"/><path class="a-s" d="M38 44C8 128 112 128 82 44" stroke="var(--white)" stroke-width="3.5"/><rect class="a-main a-o" x="29" y="8" width="15" height="42" rx="7" transform="rotate(-10 36 29)"/><rect class="a-main a-o" x="76" y="8" width="15" height="42" rx="7" transform="rotate(10 84 29)"/>',
+    straps: '<path class="a-s" d="M36 104V38a13 13 0 0 1 26 0v8" stroke="var(--navy-deep)" stroke-width="17"/><path class="a-s" d="M36 104V38a13 13 0 0 1 26 0v8" stroke="var(--c)" stroke-width="12"/><path class="a-s" d="M84 16v66a13 13 0 0 1-26 0v-8" stroke="var(--navy-deep)" stroke-width="17"/><path class="a-s" d="M84 16v66a13 13 0 0 1-26 0v-8" stroke="var(--white)" stroke-width="12"/><path class="a-s" d="M36 100V42M84 20v58" stroke="var(--navy-deep)" stroke-width="1.5" stroke-dasharray="4 4"/>',
+    pullup: '<path class="a-s" d="M30 24v62h60V24" stroke="var(--navy-deep)" stroke-width="10"/><path class="a-s" d="M30 24v62h60V24" stroke="var(--white)" stroke-width="5.5"/><path class="a-s" d="M22 24h76" stroke="var(--navy-deep)" stroke-width="10"/><path class="a-s" d="M22 24h76" stroke="var(--white)" stroke-width="5.5"/><path class="a-s" d="M10 50h100" stroke="var(--navy-deep)" stroke-width="11"/><path class="a-s" d="M10 50h100" stroke="var(--white)" stroke-width="6.5"/><rect class="a-main a-o" x="5" y="42" width="24" height="16" rx="8"/><rect class="a-main a-o" x="91" y="42" width="24" height="16" rx="8"/><rect class="a-main a-o" x="46" y="78" width="28" height="16" rx="8"/>',
+    roller: '<g transform="rotate(-22 60 62)"><rect class="a-main a-o" x="12" y="40" width="96" height="44" rx="22"/><path class="a-s" d="M34 45v34M50 43v38M66 43v38" stroke="var(--navy-deep)" stroke-width="2" stroke-dasharray="5 5"/><ellipse class="a-dark a-o" cx="96" cy="62" rx="9" ry="19"/><ellipse class="a-white" cx="96" cy="62" rx="3.5" ry="8"/></g>',
+    balls: '<circle class="a-main a-o" cx="45" cy="70" r="27"/><path class="a-s" d="M21 60c15 9 33 9 48 0" stroke="var(--navy-deep)" stroke-width="2"/><circle class="a-white a-o" cx="84" cy="50" r="22"/><path class="a-s" d="M64 43c12 8 28 8 40 0" stroke="var(--navy-deep)" stroke-width="2"/>'
+  };
+
+  /* Where each item sits in the hero locker: id, x, y, size, hangs from a hook, extra rotation. */
+  const LOCKER = [
+    ["whey", 126, 93, 104, false, 0], ["shaker", 218, 96, 100, false, 0], ["corepower", 302, 98, 98, false, 0],
+    ["bands", 135, 197, 96, true, 0], ["rope", 221, 196, 100, true, 180], ["straps", 311, 200, 92, true, 0],
+    ["roller", 120, 398, 132, false, -60], ["squeeze", 238, 412, 118, false, 0], ["balls", 322, 458, 78, false, 0]
+  ];
+
+  const $ = (s, r = document) => r.querySelector(s);
+  const $$ = (s, r = document) => [...r.querySelectorAll(s)];
+  const byId = Object.fromEntries(PRODUCTS.map(p => [p.id, p]));
+  const reduceMotion = matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const MAX_QTY = 9;
+  const STORE_KEY = "afterbell-cart-v1";
+  const tag = CONFIG.amazonTag.trim();
+
+  const page = $("#page"), grid = $("#grid"), cartBtn = $("#cartBtn"), cartN = $("#cartN");
+  const drawer = $("#drawer"), scrim = $("#scrim"), closeBtn = $("#closeBtn");
+  const lines = $("#lines"), empty = $("#empty"), foot = $("#drawerFoot"), checkout = $("#checkout");
+  const barbellEl = $("#barbell"), barCap = $("#barCap"), toastEl = $("#toast");
+  const lockerEl = $("#locker"), tip = $("#tip");
+  const kitRows = $("#kitRows"), kitBtn = $("#kitBtn"), kitNote = $("#kitNote"), stamp = $("#stamp");
+
+  /* ---------- Amazon links ---------- */
+  function productUrl(p) {
+    const u = new URL(`https://${CONFIG.amazonDomain}/dp/${p.asin}`);
+    if (tag) u.searchParams.set("tag", tag);
+    return u.href;
+  }
+  function cartUrl(entries) {
+    const q = new URLSearchParams();
+    if (tag) q.set("AssociateTag", tag);
+    entries.forEach(([id, qty], i) => {
+      q.set(`ASIN.${i + 1}`, byId[id].asin);
+      q.set(`Quantity.${i + 1}`, String(qty));
+    });
+    return `https://${CONFIG.amazonDomain}/gp/aws/cart/add.html?${q}`;
+  }
+
+  /* ---------- Cart state ---------- */
+  function loadCart() {
+    try {
+      const raw = JSON.parse(localStorage.getItem(STORE_KEY) || "{}"), out = {};
+      for (const [id, q] of Object.entries(raw)) if (byId[id] && Number.isInteger(q) && q > 0) out[id] = Math.min(q, MAX_QTY);
+      return out;
+    } catch (e) { return {}; }
+  }
+  function saveCart() { try { localStorage.setItem(STORE_KEY, JSON.stringify(cart)); } catch (e) {} }
+  let cart = loadCart();
+  const qtyOf = id => cart[id] || 0;
+  const cartEntries = () => PRODUCTS.filter(p => cart[p.id]).map(p => [p.id, cart[p.id]]);
+  const cartUnits = () => Object.values(cart).reduce((a, b) => a + b, 0);
+  const plural = (n, w) => `${n} ${w}${n === 1 ? "" : "s"}`;
+
+  function setQty(id, q) {
+    q = Math.max(0, Math.min(MAX_QTY, q));
+    if (q) cart[id] = q; else delete cart[id];
+    saveCart();
+    renderAll();
+  }
+
+  /* ---------- Markup ---------- */
+  const artSvg = p => `<svg class="art" viewBox="0 0 120 120" style="--c:${CATS[p.cat].color}" aria-hidden="true" focusable="false">${ART[p.art]}</svg>`;
+
+  function cardHtml(p) {
+    const c = CATS[p.cat];
+    return `<li class="card" data-card="${p.id}" data-cat="${p.cat}" style="--c:${c.color}">
+      <div class="card__art"><span class="cat"><i class="plate"></i>${c.label}</span>${artSvg(p)}</div>
+      <div class="card__body">
+        <p class="card__brand">${p.brand}</p>
+        <h3 class="card__name">${p.name}</h3>
+        <p class="card__blurb">${p.blurb}</p>
+        <p class="card__spec">${p.spec}</p>
+        <div class="card__act">
+          <button class="btn btn--ink" type="button" data-add="${p.id}" aria-label="Add ${p.name} to cart">Add to cart</button>
+          <div class="stepper" hidden>
+            <button type="button" data-dec="${p.id}" aria-label="Remove one ${p.name}">−</button>
+            <output></output>
+            <button type="button" data-inc="${p.id}" aria-label="Add one more ${p.name}">+</button>
+          </div>
+          <a class="card__amz" href="${productUrl(p)}" target="_blank" rel="sponsored nofollow noopener">See price on Amazon ↗</a>
+        </div>
+      </div>
+    </li>`;
+  }
+
+  const rowHtml = p => `<li class="row" style="--c:${CATS[p.cat].color}"><span class="tile">${artSvg(p)}</span><span><b class="row__name">${p.name}</b><span class="row__meta">${p.brand} · ${CATS[p.cat].label}</span></span><i class="plate"></i></li>`;
+
+  const lineHtml = (p, q) => `<li class="line" style="--c:${CATS[p.cat].color}">
+    <span class="tile">${artSvg(p)}</span>
+    <span><b class="row__name">${p.name}</b><span class="row__meta">${p.brand}</span><a class="line__link" href="${productUrl(p)}" target="_blank" rel="sponsored nofollow noopener">View on Amazon ↗</a></span>
+    <span class="mini"><button type="button" data-dec="${p.id}" data-focus="line-${p.id}-dec" aria-label="Remove one ${p.name}">−</button><output>${q}</output><button type="button" data-inc="${p.id}" data-focus="line-${p.id}-inc" aria-label="Add one more ${p.name}">+</button></span>
+  </li>`;
+
+  function lockerHtml([id, x, y, size, hangs, rot]) {
+    const p = byId[id];
+    if (!p) return "";
+    return `<g class="lk-item" data-add="${id}" tabindex="0" role="button" aria-label="Add ${p.name} to cart" style="--c:${CATS[p.cat].color}"><g transform="translate(${x} ${y}) scale(${(size / 120).toFixed(3)})"><g class="lk-in"><g class="${hangs ? "lk-sway" : ""}"><g transform="rotate(${rot} 60 60)">${ART[p.art]}</g></g><rect class="lk-hit" width="120" height="120"/></g></g></g>`;
+  }
+
+  function barbellSvg() {
+    const colors = [];
+    PRODUCTS.forEach(p => { for (let i = 0; i < qtyOf(p.id); i++) colors.push(CATS[p.cat].color); });
+    const plates = colors.slice(0, 8).map((c, i) =>
+      `<rect x="${106 - (i + 1) * 12}" y="8" width="10" height="64" rx="3" fill="${c}"/><rect x="${254 + i * 12}" y="8" width="10" height="64" rx="3" fill="${c}"/>`).join("");
+    return `<svg viewBox="0 0 360 80" role="img" aria-label="Barbell loaded with ${plural(colors.length, "item")}"><rect x="0" y="35" width="360" height="10" rx="5" fill="var(--fog)"/><rect x="116" y="37" width="128" height="6" fill="var(--chalk)"/><rect x="106" y="25" width="10" height="30" rx="2" fill="var(--chalk)"/><rect x="244" y="25" width="10" height="30" rx="2" fill="var(--chalk)"/>${plates}</svg>`;
+  }
+
+  /* ---------- Rendering ---------- */
+  function syncCards() {
+    for (const p of PRODUCTS) {
+      const card = grid.querySelector(`[data-card="${p.id}"]`);
+      if (!card) continue;
+      const q = qtyOf(p.id), addBtn = card.querySelector("[data-add]"), st = card.querySelector(".stepper");
+      const active = document.activeElement;
+      addBtn.hidden = q > 0;
+      st.hidden = q === 0;
+      st.querySelector("output").textContent = q ? `${q} in cart` : "";
+      card.classList.toggle("is-in", q > 0);
+      if (q > 0 && active === addBtn) st.querySelector("[data-inc]").focus();
+      else if (q === 0 && st.contains(active)) addBtn.focus();
+    }
+  }
+
+  function renderDrawer() {
+    const es = cartEntries(), n = cartUnits();
+    const key = drawer.contains(document.activeElement) ? document.activeElement.dataset.focus : null;
+    lines.innerHTML = es.map(([id, q]) => lineHtml(byId[id], q)).join("");
+    barbellEl.innerHTML = barbellSvg();
+    barCap.textContent = n ? `${plural(n, "item")} on the bar${n > 8 ? " (8 a side shown)" : ""}` : "Nothing loaded yet";
+    empty.hidden = n > 0;
+    lines.hidden = n === 0;
+    foot.hidden = n === 0;
+    checkout.href = n ? cartUrl(es) : "#lineup";
+    if (key) (drawer.querySelector(`[data-focus="${key}"]`) || closeBtn).focus();
+  }
+
+  function renderAll() {
+    const n = cartUnits();
+    cartN.textContent = n;
+    cartBtn.setAttribute("aria-label", `Open cart, ${plural(n, "item")}`);
+    syncCards();
+    renderDrawer();
+  }
+
+  /* ---------- Feedback ---------- */
+  let toastTimer;
+  function toast(msg) {
+    toastEl.textContent = msg;
+    toastEl.classList.add("show");
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(() => toastEl.classList.remove("show"), 2200);
+  }
+  function bump() {
+    cartBtn.classList.remove("bump");
+    void cartBtn.offsetWidth;
+    cartBtn.classList.add("bump");
+  }
+  function fly(p, from) {
+    if (reduceMotion || !from || !from.getBoundingClientRect) return bump();
+    const a = from.getBoundingClientRect(), b = cartBtn.getBoundingClientRect();
+    if (!a.width) return bump();
+    const size = Math.min(Math.max(a.width, 56), 120);
+    const el = document.createElement("div");
+    el.className = "fly";
+    el.innerHTML = artSvg(p);
+    el.style.cssText = `left:${a.left + a.width / 2 - size / 2}px;top:${a.top + a.height / 2 - size / 2}px;width:${size}px;height:${size}px`;
+    document.body.append(el);
+    const dx = b.left + b.width / 2 - (a.left + a.width / 2), dy = b.top + b.height / 2 - (a.top + a.height / 2);
+    const anim = el.animate([
+      { transform: "translate(0,0) scale(1) rotate(0deg)", opacity: 1 },
+      { transform: `translate(${dx * 0.45}px,${dy * 0.45 - 70}px) scale(.85) rotate(-14deg)`, opacity: 1, offset: 0.45 },
+      { transform: `translate(${dx}px,${dy}px) scale(.18) rotate(-28deg)`, opacity: 0.35 }
+    ], { duration: 650, easing: "cubic-bezier(.3,.6,.3,1)" });
+    anim.onfinish = anim.oncancel = () => { el.remove(); bump(); };
+  }
+
+  /* ---------- Actions ---------- */
+  function addOne(id, from) {
+    const p = byId[id];
+    if (!p) return;
+    if (qtyOf(id) >= MAX_QTY) return toast(`Max ${MAX_QTY} of one item`);
+    const card = from && from.closest ? from.closest(".card") : null;
+    const src = card ? card.querySelector(".art") : from;
+    setQty(id, qtyOf(id) + 1);
+    fly(p, src);
+    toast(`Added: ${p.name}`);
+  }
+  function addKit(ids, name) {
+    let added = 0;
+    ids.forEach(id => { if (byId[id] && !qtyOf(id)) { cart[id] = 1; added++; } });
+    saveCart();
+    renderAll();
+    bump();
+    toast(added ? `${name}: ${plural(added, "item")} added` : `${name} is already in your cart`);
+  }
+
+  let lastFocus = null;
+  function openCart(opener) {
+    lastFocus = opener || cartBtn;
+    drawer.inert = false;
+    page.inert = true;
+    drawer.classList.add("open");
+    scrim.classList.add("open");
+    document.documentElement.classList.add("locked");
+    closeBtn.focus();
+  }
+  function closeCart() {
+    if (!drawer.classList.contains("open")) return;
+    drawer.classList.remove("open");
+    scrim.classList.remove("open");
+    document.documentElement.classList.remove("locked");
+    drawer.inert = true;
+    page.inert = false;
+    if (lastFocus && lastFocus.focus) lastFocus.focus();
+  }
+
+  let clearArmed = false, clearTimer;
+  function clearCart(btn) {
+    if (!clearArmed) {
+      clearArmed = true;
+      btn.textContent = "Tap again to clear";
+      clearTimer = setTimeout(() => { clearArmed = false; btn.textContent = "Clear cart"; }, 3000);
+      return;
+    }
+    clearTimeout(clearTimer);
+    clearArmed = false;
+    btn.textContent = "Clear cart";
+    cart = {};
+    saveCart();
+    renderAll();
+    closeBtn.focus();
+    toast("Cart cleared");
+  }
+
+  function setFilter(f) {
+    let shown = 0;
+    $$(".card", grid).forEach(c => {
+      const ok = f === "all" || c.dataset.cat === f;
+      c.hidden = !ok;
+      if (ok) shown++;
+    });
+    $$("[data-filter]").forEach(b => b.setAttribute("aria-pressed", String(b.dataset.filter === f)));
+    $("#count").textContent = plural(shown, "pick");
+  }
+
+  /* ---------- Pop quiz ---------- */
+  const answers = { goal: "strong", place: "school", fix: "hungry" };
+  let touched = false;
+  function pickKit(a) {
+    const scored = PRODUCTS.map((p, i) => ({
+      p, i,
+      s: (p.fit.goal.includes(a.goal) ? 2 : 0) + (p.fit.place.includes(a.place) ? 1 : 0) + (p.fit.fix.includes(a.fix) ? 3 : 0)
+    })).sort((x, y) => y.s - x.s || x.i - y.i);
+    const out = [], per = {};
+    for (const { p } of scored) {
+      per[p.cat] = per[p.cat] || 0;
+      if (per[p.cat] >= 3) continue;
+      per[p.cat]++;
+      out.push(p);
+      if (out.length === 4) break;
+    }
+    return out;
+  }
+  function renderKit(animate) {
+    const picks = pickKit(answers);
+    kitRows.innerHTML = picks.map(rowHtml).join("");
+    kitBtn.dataset.kit = picks.map(p => p.id).join(",");
+    kitNote.hidden = touched;
+    if (animate && !reduceMotion) {
+      stamp.classList.remove("pop");
+      void stamp.offsetWidth;
+      stamp.classList.add("pop");
+    }
+  }
+
+  /* ---------- Events ---------- */
+  document.addEventListener("click", e => {
+    const el = e.target.closest("[data-add],[data-inc],[data-dec],[data-kit],[data-open-cart],[data-close-cart],[data-filter],[data-clear]");
+    if (!el) return;
+    if (el.hasAttribute("data-add")) return addOne(el.dataset.add, el);
+    if (el.hasAttribute("data-inc")) {
+      const id = el.dataset.inc;
+      if (qtyOf(id) >= MAX_QTY) return toast(`Max ${MAX_QTY} of one item`);
+      setQty(id, qtyOf(id) + 1);
+      return bump();
+    }
+    if (el.hasAttribute("data-dec")) {
+      const id = el.dataset.dec;
+      setQty(id, qtyOf(id) - 1);
+      if (!qtyOf(id)) toast(`Removed: ${byId[id].name}`);
+      return;
+    }
+    if (el.hasAttribute("data-kit")) return addKit(el.dataset.kit.split(",").filter(Boolean), el.dataset.kitName || "Kit");
+    if (el.hasAttribute("data-open-cart")) return openCart(el);
+    if (el.hasAttribute("data-close-cart")) return closeCart();
+    if (el.hasAttribute("data-filter")) return setFilter(el.dataset.filter);
+    if (el.hasAttribute("data-clear")) return clearCart(el);
+  });
+
+  document.addEventListener("keydown", e => {
+    if (e.key === "Escape") return closeCart();
+    const item = (e.key === "Enter" || e.key === " ") && e.target.closest ? e.target.closest(".lk-item") : null;
+    if (item) { e.preventDefault(); addOne(item.dataset.add, item); }
+  });
+
+  $("#sheet").addEventListener("submit", e => e.preventDefault());
+  $("#sheet").addEventListener("change", e => {
+    const key = e.target.name ? e.target.name.replace("quiz-", "") : "";
+    if (!(key in answers)) return;
+    answers[key] = e.target.value;
+    touched = true;
+    renderKit(true);
+  });
+
+  function showTip(item) {
+    const p = byId[item.dataset.add];
+    if (!p) return;
+    tip.textContent = `${p.name} · add`;
+    const r = item.getBoundingClientRect(), base = lockerEl.getBoundingClientRect(), half = tip.offsetWidth / 2;
+    const x = Math.min(Math.max(r.left + r.width / 2 - base.left, half), base.width - half);
+    tip.style.left = `${x}px`;
+    tip.style.top = `${r.top - base.top - 4}px`;
+    tip.classList.add("show");
+  }
+  const hideTip = () => tip.classList.remove("show");
+  lockerEl.addEventListener("pointerover", e => { const it = e.target.closest(".lk-item"); if (it) showTip(it); });
+  lockerEl.addEventListener("pointerout", e => { const it = e.target.closest(".lk-item"); if (it && !it.contains(e.relatedTarget)) hideTip(); });
+  lockerEl.addEventListener("focusin", e => { const it = e.target.closest(".lk-item"); if (it) showTip(it); });
+  lockerEl.addEventListener("focusout", hideTip);
+
+  if (!reduceMotion && matchMedia("(hover:hover) and (pointer:fine)").matches) {
+    const vars = ["--rx", "--ry", "--ax", "--ay"];
+    grid.addEventListener("pointermove", e => {
+      const c = e.target.closest(".card");
+      if (!c) return;
+      const r = c.getBoundingClientRect(), x = (e.clientX - r.left) / r.width - 0.5, y = (e.clientY - r.top) / r.height - 0.5;
+      c.style.setProperty("--ry", `${(x * 7).toFixed(2)}deg`);
+      c.style.setProperty("--rx", `${(-y * 7).toFixed(2)}deg`);
+      c.style.setProperty("--ax", `${(x * 12).toFixed(1)}px`);
+      c.style.setProperty("--ay", `${(y * 12).toFixed(1)}px`);
+    });
+    grid.addEventListener("pointerout", e => {
+      const c = e.target.closest(".card");
+      if (c && !c.contains(e.relatedTarget)) vars.forEach(v => c.style.removeProperty(v));
+    });
+  }
+
+  /* ---------- Boot ---------- */
+  const words = ["Zero", "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten", "Eleven", "Twelve"];
+  $("#lineupTitle").textContent = `${words[PRODUCTS.length] || PRODUCTS.length} picks. Zero filler.`;
+  grid.innerHTML = PRODUCTS.map(cardHtml).join("");
+  $("#lockerItems").innerHTML = LOCKER.map(lockerHtml).join("");
+  $("#questions").innerHTML = QUIZ.map((q, qi) =>
+    `<fieldset class="q"><legend><span class="q__n">${qi + 1}.</span><span>${q.q}</span></legend><div class="q__opts">${q.opts.map(([v, label], oi) =>
+      `<label class="bubble"><input type="radio" name="quiz-${q.key}" id="quiz-${q.key}-${v}" value="${v}"${answers[q.key] === v ? " checked" : ""}><span class="bubble__dot" aria-hidden="true">${"ABCD"[oi]}</span><span class="bubble__txt">${label}</span></label>`).join("")}</div></fieldset>`).join("");
+  $("#kitsList").innerHTML = KITS.map(k =>
+    `<li class="kit"><h3 class="pennant" style="--k:${k.color};--kt:${k.text}">${k.name}</h3><p class="kit__who">${k.who}</p><ul class="rows">${k.items.filter(id => byId[id]).map(id => rowHtml(byId[id])).join("")}</ul><button class="btn btn--gold" type="button" data-kit="${k.items.join(",")}" data-kit-name="${k.name}">Add all ${k.items.length}</button></li>`).join("");
+  $("#year").textContent = new Date().getFullYear();
+  if (!tag) $("#setup").hidden = false;
+  if (CONFIG.checkoutMode === "links") {
+    checkout.hidden = true;
+    $("#fine").textContent = "Open each item on Amazon to buy it. You'll see current prices there. We earn a commission on qualifying purchases.";
+  }
+  renderKit(false);
+  setFilter("all");
+  renderAll();
+})();
+</script>
+</body>
+</html>
