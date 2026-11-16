@@ -3,11 +3,17 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Protein, hydration and training gear picked for high school athletes. Build your cart here, then check out on Amazon.">
+<meta name="description" content="Protein, hydration and training gear. Build your cart here, then check out on Amazon.">
 <meta name="theme-color" content="#0a1229">
 <meta property="og:type" content="website">
+<meta property="og:site_name" content="AfterBell Supply">
 <meta property="og:title" content="AfterBell Supply">
-<meta property="og:description" content="Protein, hydration and training gear picked for high school athletes. Build your cart here, then check out on Amazon.">
+<meta property="og:description" content="Protein, hydration and training gear. Build your cart here, then check out on Amazon.">
+<meta property="og:image" content="preview.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="AfterBell Supply. Last bell rings. Work starts.">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2040%2040%22%3E%3Crect%20width%3D%2240%22%20height%3D%2240%22%20rx%3D%228%22%20fill%3D%22%230a1229%22%2F%3E%3Cpath%20fill%3D%22%23f7b500%22%20fill-rule%3D%22evenodd%22%20d%3D%22M15%205h10l9%2025h3v6H24v-6h2.5l-1-3.5h-11l-1%203.5H16v6H3v-6h3zM17%2020h6l-3-9z%22%2F%3E%3C%2Fsvg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -82,7 +88,7 @@ svg{display:block}
 .cart-btn:hover .cart-btn__n{background:var(--ink);color:var(--gold)}
 .cart-btn.bump{animation:bump .45s var(--ease)}
 @keyframes bump{35%{transform:scale(1.2) rotate(-4deg)}}
-@media (max-width:760px){.nav{display:none}.cart-btn{margin-left:auto}}
+@media (max-width:860px){.nav{display:none}.cart-btn{margin-left:auto}}
 
 /* Owner setup note */
 .setup{background:var(--navy-lift);color:var(--chalk);border-bottom:1.5px dashed var(--gold);font-size:var(--t-sm)}
@@ -178,6 +184,8 @@ svg{display:block}
 .stepper button{height:48px;border:0;background:transparent;font:700 1.6rem/1 var(--font-display);cursor:pointer}
 .stepper button:hover{background:var(--gold-deep)}
 .stepper output{text-align:center;font:italic 800 1.15rem/1 var(--font-display);letter-spacing:.05em;text-transform:uppercase}
+.heads{margin-top:22px;max-width:46rem;padding:12px 16px;border:1.5px solid var(--ink);border-radius:var(--r-sm);background:var(--white);font-size:var(--t-sm);line-height:1.45}
+.heads b{margin-right:6px;color:var(--plate-red);font:700 1rem/1 var(--font-display);letter-spacing:.1em;text-transform:uppercase}
 
 /* Shared item rows */
 .rows{display:grid;gap:10px}
@@ -244,11 +252,33 @@ svg{display:block}
 .faq details[open] summary::after{transform:rotate(45deg)}
 .faq__a{padding-bottom:18px;max-width:38rem}
 
-/* Footer */
+/* Study guide */
+.guides{display:grid;gap:18px}
+@media (min-width:760px){.guides{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.guide{display:grid;gap:14px;align-content:start;min-width:0;background:var(--navy-lift);border:1.5px solid var(--navy-line);border-radius:var(--r);padding:22px}
+.guide__tag{display:flex;align-items:center;gap:8px;font:700 var(--t-xs)/1 var(--font-display);letter-spacing:.16em;text-transform:uppercase;color:var(--fog)}
+.guide__title{font:italic 900 2.1rem/.95 var(--font-display);text-transform:uppercase}
+.guide__list{display:grid;gap:10px}
+.guide__list li{position:relative;padding-left:20px;line-height:1.45}
+.guide__list li::before{content:"";position:absolute;left:0;top:.55em;width:8px;height:8px;border-radius:50%;background:var(--c)}
+.guide__link{justify-self:start;padding:8px 0;color:var(--gold);font:italic 800 1.15rem/1 var(--font-display);letter-spacing:.06em;text-transform:uppercase;text-underline-offset:4px}
+.guide__link:hover{color:var(--chalk)}
+.guides__fine{margin-top:22px;max-width:46rem;font-size:var(--t-sm);color:var(--fog)}
+
+/* Footer and privacy */
 .foot{background:var(--navy-deep);color:var(--fog);font-size:var(--t-sm)}
 .foot__in{padding-block:36px 44px;display:grid;gap:14px}
 .foot__line{max-width:46rem}
 .foot__line--lead{color:var(--chalk);font-weight:600}
+.foot__links{display:flex;flex-wrap:wrap;gap:2px 22px}
+.foot__links a{padding:8px 0;color:var(--chalk);text-underline-offset:3px}
+.foot__links a:hover{color:var(--gold)}
+.privacy{display:grid;gap:12px;margin-block:10px;padding-block:24px;border-block:1.5px solid var(--navy-line)}
+.privacy__title{color:var(--chalk);font:italic 900 2rem/1 var(--font-display);text-transform:uppercase}
+.privacy__lead{max-width:46rem;color:var(--chalk);font-weight:600}
+.privacy__list{display:grid;gap:10px;max-width:46rem}
+.privacy__list b{color:var(--chalk)}
+.privacy a{color:var(--chalk);text-underline-offset:3px}
 
 /* Cart drawer */
 .scrim{position:fixed;inset:0;z-index:40;background:color-mix(in srgb,var(--navy-deep) 72%,transparent);opacity:0;pointer-events:none;transition:opacity .25s}
@@ -278,6 +308,10 @@ svg{display:block}
 .fine{font-size:var(--t-xs);line-height:1.45;color:var(--fog)}
 .link-btn{justify-self:start;padding:6px 0;border:0;background:none;color:var(--fog);font-size:var(--t-sm);text-decoration:underline;text-underline-offset:3px;cursor:pointer}
 .link-btn:hover{color:var(--gold)}
+.fine b{color:var(--chalk)}
+.shared{padding:12px 14px;border:1.5px dashed var(--gold);border-radius:var(--r-sm);font-size:var(--t-sm);line-height:1.45}
+.shared b{display:block;margin-bottom:3px;color:var(--gold);font:700 1.05rem/1.1 var(--font-display);letter-spacing:.08em;text-transform:uppercase}
+.share-out{width:100%;min-height:44px;padding:0 12px;border:1.5px solid var(--navy-line);border-radius:var(--r-sm);background:var(--navy);color:var(--chalk);font:inherit;font-size:var(--t-sm)}
 
 /* Toast and fly-to-cart */
 .toast{position:fixed;left:50%;bottom:calc(18px + env(safe-area-inset-bottom,0px));z-index:70;max-width:calc(100% - 32px);padding:12px 18px;border-radius:var(--r-sm);background:var(--gold);color:var(--ink);box-shadow:4px 4px 0 var(--navy-deep);font:italic 800 1.15rem/1.1 var(--font-display);letter-spacing:.05em;text-transform:uppercase;text-align:center;pointer-events:none;opacity:0;transform:translate(-50%,24px);transition:opacity .2s,transform .25s var(--ease)}
@@ -302,6 +336,7 @@ svg{display:block}
         <a href="#lineup">Lineup</a>
         <a href="#quiz">Pop quiz</a>
         <a href="#kits">Kits</a>
+        <a href="#guides">Guides</a>
         <a href="#faq">Questions</a>
       </nav>
       <button class="cart-btn" id="cartBtn" type="button" data-open-cart aria-label="Open cart, 0 items">
@@ -325,7 +360,7 @@ svg{display:block}
         <div class="hero__copy">
           <p class="pass"><span>Hall pass</span><span>To: weight room</span><span>2:55 PM</span></p>
           <h1 class="display hero__title" id="heroTitle"><span>Last bell </span><span>rings. </span><span class="gold">Work starts.</span></h1>
-          <p class="hero__lede">Protein, hydration and training gear picked for high school athletes. Build your cart here, then check out on Amazon.</p>
+          <p class="hero__lede">Protein, hydration and training gear. Build your cart here, then check out on Amazon.</p>
           <div class="hero__cta">
             <a class="btn btn--gold" href="#lineup">Shop the lineup</a>
             <a class="btn btn--ghost" href="#quiz">Take the pop quiz</a>
@@ -397,6 +432,7 @@ svg{display:block}
           <span class="chips__count" id="count" aria-live="polite"></span>
         </div>
         <ul class="grid" id="grid"></ul>
+        <p class="heads"><b>Heads up</b>Nothing on this site is medical advice. Read every label for allergens, and check with a parent and your doctor before you start any supplement.</p>
       </div>
     </section>
 
@@ -440,7 +476,64 @@ svg{display:block}
       <div class="wrap band__in nope">
         <h2 class="eyebrow" id="nopeTitle">Not in the locker</h2>
         <ul class="nope__list display"><li>Pre-workout</li><li>Fat burners</li><li>Test boosters</li></ul>
-        <p class="nope__txt">Those are made for adults, and you don't need them. Regular meals, eight hours of sleep and showing up do more at this age than anything in a tub. Everything stocked here is everyday food and drink in a faster form, or gear you'll use for years.</p>
+        <p class="nope__txt">Those are made for adults, and you don't need them. Regular meals, eight to ten hours of sleep and showing up do more at this age than anything in a tub. Everything stocked here is everyday food and drink in a faster form, or gear you'll use for years.</p>
+      </div>
+    </section>
+
+    <section class="band band--navy" id="guides" aria-labelledby="guidesTitle">
+      <div class="wrap band__in">
+        <div class="band__head">
+          <p class="eyebrow">Study guide</p>
+          <h2 class="display h2" id="guidesTitle">Know this first</h2>
+          <p class="lede">Four short guides. All of it is free, and all of it matters more than anything in your cart.</p>
+        </div>
+        <ul class="guides">
+          <li class="guide" style="--c:var(--plate-red)">
+            <p class="guide__tag"><i class="plate"></i>Guide 1 · Fuel</p>
+            <h3 class="guide__title">Food first</h3>
+            <ul class="guide__list">
+              <li>Three meals and a snack or two cover what most young athletes need. Shakes and bars fill gaps. They don't replace meals.</li>
+              <li>Get protein at every meal: eggs, chicken, milk, yogurt, beans or peanut butter.</li>
+              <li>Eat within an hour or two after training. A sandwich works. A shake or a bar is for when real food is hours away.</li>
+              <li>Extra protein doesn't turn into extra muscle. Training, sleep and enough total food do that.</li>
+            </ul>
+            <a class="guide__link" href="#lineup" data-shop="fuel">See the fuel picks</a>
+          </li>
+          <li class="guide" style="--c:var(--plate-blue)">
+            <p class="guide__tag"><i class="plate"></i>Guide 2 · Hydration</p>
+            <h3 class="guide__title">Drink early</h3>
+            <ul class="guide__list">
+              <li>Show up hydrated. Drink water with every meal and keep a bottle with you through the day.</li>
+              <li>At practice, take a few big gulps every 15 to 20 minutes. Don't wait until you're thirsty.</li>
+              <li>Water is enough for most practices. Past an hour of hard work, or in real heat, a sports drink or electrolyte mix helps replace what you sweat out.</li>
+              <li>Check the color. Pale yellow means you're good. Dark yellow means drink more.</li>
+            </ul>
+            <a class="guide__link" href="#lineup" data-shop="hydration">See the hydration picks</a>
+          </li>
+          <li class="guide" style="--c:var(--plate-gold)">
+            <p class="guide__tag"><i class="plate"></i>Guide 3 · Training</p>
+            <h3 class="guide__title">Form before weight</h3>
+            <ul class="guide__list">
+              <li>Learn each lift with light weight first. Ask a coach or athletic trainer to watch your squat, deadlift, press and row.</li>
+              <li>Lift two or three days a week, with a rest day in between.</li>
+              <li>Add weight in small jumps, and only when every rep looks the same.</li>
+              <li>No weight room? Push-ups, pull-ups, band rows, squats and a jump rope train the whole body.</li>
+            </ul>
+            <a class="guide__link" href="#lineup" data-shop="gear">See the gear picks</a>
+          </li>
+          <li class="guide" style="--c:var(--plate-green)">
+            <p class="guide__tag"><i class="plate"></i>Guide 4 · Recovery</p>
+            <h3 class="guide__title">Sleep is the supplement</h3>
+            <ul class="guide__list">
+              <li>Aim for 8 to 10 hours a night. That's the recommendation for teenagers, and it's when your body rebuilds.</li>
+              <li>Roll each tight muscle slowly for 30 to 60 seconds. It should feel like pressure, not pain.</li>
+              <li>The day after a hard session, move easy: walk, jog light or shoot around.</li>
+              <li>Soreness that fades in a day or two is normal. Sharp pain, swelling or pain that sticks around isn't. Tell a coach, trainer or parent.</li>
+            </ul>
+            <a class="guide__link" href="#lineup" data-shop="recovery">See the recovery picks</a>
+          </li>
+        </ul>
+        <p class="guides__fine">General tips, not medical advice. Your coach, athletic trainer, parents and doctor know you, so their advice comes first.</p>
       </div>
     </section>
 
@@ -452,7 +545,7 @@ svg{display:block}
           <ol class="steps">
             <li><div><b>Add to cart</b>Tap Add on anything in the lineup, a kit, or the locker.</div></li>
             <li><div><b>Send it to Amazon</b>Open your cart and tap Check out on Amazon. Amazon opens with your picks listed.</div></li>
-            <li><div><b>Buy it there</b>Confirm the items and pay with an Amazon account. Under 18? Amazon requires a parent or guardian to be involved, so loop them in.</div></li>
+            <li><div><b>Buy it there</b>Confirm the items and pay with an Amazon account. Under 18? Amazon requires a parent or guardian to be involved, so tap Send cart to a parent and they can check out.</div></li>
           </ol>
         </div>
         <div class="stack">
@@ -471,12 +564,20 @@ svg{display:block}
               <p class="faq__a">This store is built for high schoolers, so it sticks to food basics and gear. Pre-workout, fat burners and test boosters are made for adults. If you're curious about anything stronger, talk to a parent, your doctor or your athletic trainer.</p>
             </details>
             <details>
+              <summary>I'm under 18. Can I order?</summary>
+              <p class="faq__a">Amazon requires anyone under 18 to have a parent or guardian involved. Build your cart here, open it and tap Send cart to a parent. They get a link to the same cart and can check out on their own Amazon account.</p>
+            </details>
+            <details>
               <summary>Why are there no prices here?</summary>
               <p class="faq__a">Amazon changes prices all the time, so you'll see the current price on Amazon before you pay.</p>
             </details>
             <details>
               <summary>Does this site make money?</summary>
               <p class="faq__a">Yes. We earn a commission from Amazon when you buy through these links. It doesn't change what you pay.</p>
+            </details>
+            <details>
+              <summary>Does this site track me?</summary>
+              <p class="faq__a">No. There are no accounts, no sign-ups and no tracking scripts, and your cart stays on your own device. The details are under <a href="#privacy">Privacy</a> at the bottom of the page.</p>
             </details>
           </div>
         </div>
@@ -491,6 +592,20 @@ svg{display:block}
       <p class="foot__line foot__line--lead">As an Amazon Associate I earn from qualifying purchases.</p>
       <p class="foot__line">Checkout, pricing, shipping and returns are handled by Amazon. Amazon and the Amazon logo are trademarks of Amazon.com, Inc. or its affiliates.</p>
       <p class="foot__line">Nothing here is medical advice. Read every label for allergens, and check with a parent and your doctor before starting any supplement.</p>
+      <section class="privacy" id="privacy" aria-labelledby="privacyTitle">
+        <h2 class="privacy__title" id="privacyTitle">Privacy</h2>
+        <p class="privacy__lead">This site doesn't collect anything about you. There are no accounts, no sign-ups, no ads and no tracking scripts.</p>
+        <ul class="privacy__list">
+          <li><b>Your cart.</b> It's saved in your browser on your own device, so it's still there when you come back. It's never sent to us. Clearing your cart or your browser data erases it. Your pop quiz answers never leave the page.</li>
+          <li><b>Sent carts.</b> If you tap Send cart to a parent, the link you share lists the items in your cart and nothing else.</li>
+          <li><b>Loading the page.</b> Our web host and Google Fonts, which supplies the lettering, receive your IP address and basic browser details when the page loads, the same as any website.</li>
+          <li><b>Amazon.</b> Tapping a product or Check out on Amazon takes you to Amazon. Amazon may collect information from you directly and place or read cookies in your browser, including one that tells Amazon you came from this site so we can earn a commission. What you do there is covered by Amazon's Privacy Notice. Amazon shows us which products sold. It never shows us who bought them.</li>
+          <li><b>Under 13.</b> This site isn't directed at children under 13, and it doesn't knowingly collect personal information from anyone.</li>
+          <li id="contactLine" hidden><b>Contact.</b> Questions about this site? Email <a id="contactLink" href="#privacy"></a>.</li>
+        </ul>
+        <p>Updated November 2026.</p>
+      </section>
+      <p class="foot__links"><a href="#lineup">Lineup</a><a href="#quiz">Pop quiz</a><a href="#kits">Kits</a><a href="#guides">Guides</a><a href="#faq">Questions</a><a href="#privacy">Privacy</a></p>
       <p class="foot__line">© <span id="year"></span> AfterBell Supply</p>
     </div>
   </footer>
@@ -505,6 +620,7 @@ svg{display:block}
     </button>
   </div>
   <div class="drawer__body">
+    <p class="shared" id="sharedNote" hidden><b>This cart was sent to you</b><span id="sharedTxt">Look over the items, then tap Check out on Amazon to see prices and buy.</span></p>
     <div class="bar">
       <div id="barbell"></div>
       <p class="bar__cap" id="barCap"></p>
@@ -518,7 +634,10 @@ svg{display:block}
   </div>
   <div class="drawer__foot" id="drawerFoot">
     <a class="btn btn--gold" id="checkout" href="#lineup" target="_blank" rel="sponsored nofollow noopener">Check out on Amazon ↗</a>
+    <button class="btn btn--ghost" id="shareBtn" type="button" data-share>Send cart to a parent</button>
+    <input class="share-out" id="shareOut" type="text" readonly hidden aria-label="Link to this cart">
     <p class="fine" id="fine">Opens Amazon in a new tab with these items ready to add to your Amazon cart. You'll see current prices there. We earn a commission on qualifying purchases.</p>
+    <p class="fine" id="fineTeen"><b>Under 18?</b> Amazon requires a parent or guardian to be involved. Send them this cart and they can check out.</p>
     <button class="link-btn" id="clearBtn" type="button" data-clear>Clear cart</button>
   </div>
 </aside>
@@ -530,9 +649,10 @@ svg{display:block}
 
   /* ================= EDIT HERE ================= */
   const CONFIG = {
-    amazonTag: "",                  // Your Amazon Associates tracking ID, for example "yourname-20"
+    amazonTag: "afterbell20-20",    // Your Amazon Associates tracking ID
     amazonDomain: "www.amazon.com",
-    checkoutMode: "cart"            // "cart": one button sends the whole cart to Amazon. "links": shoppers open each item on Amazon instead.
+    checkoutMode: "cart",           // "cart": one button sends the whole cart to Amazon. "links": shoppers open each item on Amazon instead.
+    contactEmail: ""                // Optional. An email address shown in the Privacy section so visitors can reach you.
   };
 
   const CATS = {
@@ -554,8 +674,8 @@ svg{display:block}
       spec: "26 g protein · 14 fl oz · 12-pack · Chocolate",
       blurb: "Already mixed. Keep one in your bag for the ride home from a game.",
       fit: { goal: ["season", "engine"], place: ["school", "field"], fix: ["hungry"] } },
-    { id: "clif", asin: "B09QHBBGJT", cat: "fuel", art: "bars", brand: "CLIF Builders", name: "Protein Bars",
-      spec: "20 g protein · 12 bars · Chocolate Peanut Butter",
+    { id: "barebells", asin: "B08KWGDMJW", cat: "fuel", art: "bars", brand: "Barebells", name: "Protein Bars",
+      spec: "20 g protein · 12 bars · Cookies & Cream",
       blurb: "Fits in a hoodie pocket. Good between last period and warm-ups.",
       fit: { goal: ["season", "engine", "start"], place: ["school", "field"], fix: ["hungry"] } },
     { id: "shaker", asin: "B0877B826H", cat: "fuel", art: "shaker", brand: "BlenderBottle", name: "Classic V2 Shaker",
@@ -598,7 +718,7 @@ svg{display:block}
 
   const KITS = [
     { name: "Day One", who: "New to the weight room.", color: "var(--plate-gold)", text: "var(--ink)", items: ["whey", "shaker", "bands", "roller"] },
-    { name: "Game Week", who: "In season and playing twice a week.", color: "var(--plate-red)", text: "var(--white)", items: ["liquidiv", "squeeze", "clif", "balls"] },
+    { name: "Game Week", who: "In season and playing twice a week.", color: "var(--plate-red)", text: "var(--white)", items: ["liquidiv", "squeeze", "barebells", "balls"] },
     { name: "Garage Gym", who: "Training at home with no equipment.", color: "var(--plate-green)", text: "var(--ink)", items: ["pullup", "bands", "rope", "roller"] }
   ];
 
@@ -646,6 +766,8 @@ svg{display:block}
   const barbellEl = $("#barbell"), barCap = $("#barCap"), toastEl = $("#toast");
   const lockerEl = $("#locker"), tip = $("#tip");
   const kitRows = $("#kitRows"), kitBtn = $("#kitBtn"), kitNote = $("#kitNote"), stamp = $("#stamp");
+  const shareBtn = $("#shareBtn"), shareOut = $("#shareOut"), sharedNote = $("#sharedNote"), fineTeen = $("#fineTeen");
+  const known = id => Object.prototype.hasOwnProperty.call(byId, id);
 
   /* ---------- Amazon links ---------- */
   function productUrl(p) {
@@ -667,7 +789,7 @@ svg{display:block}
   function loadCart() {
     try {
       const raw = JSON.parse(localStorage.getItem(STORE_KEY) || "{}"), out = {};
-      for (const [id, q] of Object.entries(raw)) if (byId[id] && Number.isInteger(q) && q > 0) out[id] = Math.min(q, MAX_QTY);
+      for (const [id, q] of Object.entries(raw)) if (known(id) && Number.isInteger(q) && q > 0) out[id] = Math.min(q, MAX_QTY);
       return out;
     } catch (e) { return {}; }
   }
@@ -757,6 +879,8 @@ svg{display:block}
     empty.hidden = n > 0;
     lines.hidden = n === 0;
     foot.hidden = n === 0;
+    shareOut.hidden = true;
+    if (!n) setShared(false);
     checkout.href = n ? cartUrl(es) : "#lineup";
     if (key) (drawer.querySelector(`[data-focus="${key}"]`) || closeBtn).focus();
   }
@@ -841,6 +965,65 @@ svg{display:block}
     if (lastFocus && lastFocus.focus) lastFocus.focus();
   }
 
+  /* ---------- Sending a cart to someone else ----------
+     The link points back to this page with the cart in the address, like #cart=whey:1,bands:2.
+     Whoever opens it gets the same cart and checks out from here, so the Amazon link is always used on this site. */
+  function shareUrl() {
+    return `${location.href.split("#")[0]}#cart=${cartEntries().map(([id, q]) => `${id}:${q}`).join(",")}`;
+  }
+  function readSharedCart() {
+    const m = /^#cart=(.+)$/.exec(location.hash);
+    if (!m) return null;
+    let list;
+    try { list = decodeURIComponent(m[1]); } catch (e) { return null; }
+    const out = {};
+    for (const part of list.split(",")) {
+      const [id, q] = part.split(":"), n = parseInt(q, 10);
+      if (known(id) && n > 0) out[id] = Math.min(n, MAX_QTY);
+    }
+    return Object.keys(out).length ? out : null;
+  }
+  function takeSharedCart() {
+    const shared = readSharedCart();
+    if (!shared) return false;
+    cart = shared;
+    saveCart();
+    try { history.replaceState(null, "", location.pathname + location.search); } catch (e) {}
+    return true;
+  }
+  /* Someone who opened a sent cart sees a note about it and doesn't need the send button. */
+  function setShared(on) {
+    sharedNote.hidden = !on;
+    shareBtn.hidden = on;
+    fineTeen.hidden = on;
+  }
+  function showSharedCart() {
+    setShared(true);
+    openCart();
+    toast(`Cart loaded: ${plural(cartUnits(), "item")}`);
+  }
+  async function shareCart() {
+    const url = shareUrl();
+    if (navigator.share) {
+      try {
+        await navigator.share({ title: "AfterBell cart", text: "Can you check out this cart for me?", url });
+        return;
+      } catch (e) {
+        if (e && e.name === "AbortError") return;
+      }
+    }
+    try {
+      await navigator.clipboard.writeText(url);
+      toast("Link copied. Send it to a parent.");
+    } catch (e) {
+      shareOut.value = url;
+      shareOut.hidden = false;
+      shareOut.focus();
+      shareOut.select();
+      toast("Copy the link in your cart");
+    }
+  }
+
   let clearArmed = false, clearTimer;
   function clearCart(btn) {
     if (!clearArmed) {
@@ -902,7 +1085,7 @@ svg{display:block}
 
   /* ---------- Events ---------- */
   document.addEventListener("click", e => {
-    const el = e.target.closest("[data-add],[data-inc],[data-dec],[data-kit],[data-open-cart],[data-close-cart],[data-filter],[data-clear]");
+    const el = e.target.closest("[data-add],[data-inc],[data-dec],[data-kit],[data-open-cart],[data-close-cart],[data-filter],[data-clear],[data-shop],[data-share]");
     if (!el) return;
     if (el.hasAttribute("data-add")) return addOne(el.dataset.add, el);
     if (el.hasAttribute("data-inc")) {
@@ -922,6 +1105,8 @@ svg{display:block}
     if (el.hasAttribute("data-close-cart")) return closeCart();
     if (el.hasAttribute("data-filter")) return setFilter(el.dataset.filter);
     if (el.hasAttribute("data-clear")) return clearCart(el);
+    if (el.hasAttribute("data-shop")) return setFilter(el.dataset.shop);
+    if (el.hasAttribute("data-share")) return shareCart();
   });
 
   document.addEventListener("keydown", e => {
@@ -987,10 +1172,20 @@ svg{display:block}
   if (CONFIG.checkoutMode === "links") {
     checkout.hidden = true;
     $("#fine").textContent = "Open each item on Amazon to buy it. You'll see current prices there. We earn a commission on qualifying purchases.";
+    $("#sharedTxt").textContent = "Look over the items, then open each one on Amazon to see prices and buy.";
   }
+  const contact = (CONFIG.contactEmail || "").trim();
+  if (contact) {
+    $("#contactLink").href = `mailto:${contact}`;
+    $("#contactLink").textContent = contact;
+    $("#contactLine").hidden = false;
+  }
+  const arrived = takeSharedCart();
   renderKit(false);
   setFilter("all");
   renderAll();
+  if (arrived) showSharedCart();
+  window.addEventListener("hashchange", () => { if (takeSharedCart()) { renderAll(); showSharedCart(); } });
 })();
 </script>
 </body>
